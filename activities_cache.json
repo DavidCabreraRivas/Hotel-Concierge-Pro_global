@@ -27,6 +27,62 @@
     "id": "69c94e578ae148fd5a07fcdd"
   },
   {
+    "name": "Kayak & Snorkel Papagayo",
+    "name_es": "Kayak y Snorkel Papagayo",
+    "category": "adventure",
+    "price_eur": 45.0,
+    "price_credits": 7.0,
+    "duration": "2-3 hours",
+    "location": "Playa Blanca",
+    "provider": "H2O Sports Lanzarote",
+    "commission_percentage": 20.0,
+    "description": "Paddle through crystal-clear waters to the famous Papagayo beaches. Snorkeling equipment and guide included.",
+    "description_es": "Rema por aguas cristalinas hasta las famosas playas de Papagayo. Equipo de snorkel y guia incluidos.",
+    "features": [
+      "Kayak + Snorkel",
+      "Guide",
+      "Equipment included",
+      "Papagayo beaches"
+    ],
+    "features_es": [
+      "Kayak + Snorkel",
+      "Guia",
+      "Equipo incluido",
+      "Playas Papagayo"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "Buggy Volcano Tour",
+    "name_es": "Buggy Tour Volcanico",
+    "category": "adventure",
+    "price_eur": 90.0,
+    "price_credits": 14.0,
+    "duration": "2-3 hours",
+    "location": "Hotel pickup",
+    "provider": "Low Cost Tours Lanzarote",
+    "commission_percentage": 18.0,
+    "description": "Drive your own buggy through volcanic landscapes and off-road trails. Helmets and insurance included.",
+    "description_es": "Conduce tu propio buggy por paisajes volcanicos y caminos off-road. Cascos y seguro incluidos.",
+    "features": [
+      "Drive your own buggy",
+      "Volcanic trails",
+      "Helmets included",
+      "Insurance"
+    ],
+    "features_es": [
+      "Conduce tu buggy",
+      "Rutas volcanicas",
+      "Cascos incluidos",
+      "Seguro"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
     "name": "Hidden Beaches Jeep Safari",
     "name_es": "Safari en Jeep por Playas Escondidas",
     "description": "Discover Lanzarote's secret beaches by 4x4 jeep. Visit Papagayo, Playa Mujeres, and Playa del Pozo.",
@@ -81,6 +137,118 @@
     "id": "69c95361e554cd658544fbb9"
   },
   {
+    "name": "E-Paddleboard + Snorkel Papagayo",
+    "name_es": "E-Paddleboard + Snorkel Papagayo",
+    "category": "beach",
+    "price_eur": 65.0,
+    "price_credits": 10.0,
+    "duration": "2 hours",
+    "location": "Playa Blanca",
+    "provider": "H2O Sports Lanzarote",
+    "commission_percentage": 22.0,
+    "description": "Electric paddleboard experience to Papagayo coves with snorkeling stops. Emerging trend — SUP with motor assist.",
+    "description_es": "Experiencia en paddleboard electrico hasta las calas de Papagayo con paradas de snorkel. Tendencia emergente — SUP con asistencia de motor.",
+    "features": [
+      "Electric SUP",
+      "Snorkel gear",
+      "Papagayo coves",
+      "No experience needed"
+    ],
+    "features_es": [
+      "SUP electrico",
+      "Equipo snorkel",
+      "Calas Papagayo",
+      "Sin experiencia previa"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "Convertible Rental (VW T-Roc Cabrio or similar)",
+    "name_es": "Alquiler Descapotable (VW T-Roc Cabrio o similar)",
+    "category": "car_rental",
+    "price_eur": 65.0,
+    "price_credits": 10.0,
+    "duration": "1-7 days",
+    "location": "Hotel delivery",
+    "provider": "Cabrera Medina",
+    "commission_percentage": 15.0,
+    "description": "Experience Lanzarote with the top down. Full insurance and unlimited mileage included.",
+    "description_es": "Experimenta Lanzarote con el techo abierto. Seguro completo y kilometraje ilimitado incluidos.",
+    "features": [
+      "Convertible",
+      "Full insurance",
+      "Unlimited km",
+      "Premium experience"
+    ],
+    "features_es": [
+      "Descapotable",
+      "Seguro completo",
+      "Km ilimitados",
+      "Experiencia premium"
+    ],
+    "integration_type": "api",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "Wine Tour La Geria (4 Wineries)",
+    "name_es": "Tour del Vino La Geria (4 Bodegas)",
+    "category": "culture",
+    "price_eur": 65.0,
+    "price_credits": 10.0,
+    "duration": "5 hours",
+    "location": "Hotel pickup",
+    "provider": "Feeling Lanzarote Tours",
+    "commission_percentage": 22.0,
+    "description": "Visit 4 traditional volcanic wineries in La Geria. Taste Malvasia wines and learn about unique cultivation methods.",
+    "description_es": "Visita 4 bodegas volcanicas tradicionales en La Geria. Degusta vinos Malvasia y aprende sobre los metodos unicos de cultivo.",
+    "features": [
+      "4 wineries",
+      "Wine tasting",
+      "Tapas",
+      "Expert guide"
+    ],
+    "features_es": [
+      "4 bodegas",
+      "Cata de vinos",
+      "Tapas",
+      "Guia experto"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "Cesar Manrique Art & Architecture Tour",
+    "name_es": "Tour Arte y Arquitectura Cesar Manrique",
+    "category": "culture",
+    "price_eur": 48.0,
+    "price_credits": 7.0,
+    "duration": "4 hours",
+    "location": "Hotel pickup",
+    "provider": "CANCO Travel",
+    "commission_percentage": 20.0,
+    "description": "Discover the artistic legacy of Cesar Manrique. Visit Fundacion Cesar Manrique, Jardin de Cactus, and Mirador del Rio.",
+    "description_es": "Descubre el legado artistico de Cesar Manrique. Visita Fundacion Cesar Manrique, Jardin de Cactus y Mirador del Rio.",
+    "features": [
+      "3 Manrique sites",
+      "Entry tickets",
+      "Guide",
+      "Transport"
+    ],
+    "features_es": [
+      "3 sitios Manrique",
+      "Entradas",
+      "Guia",
+      "Transporte"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
     "name": "Tapas & Wine Walking Tour Puerto del Carmen",
     "name_es": "Tour de Tapas y Vino por Puerto del Carmen",
     "description": "Guided walking tour through the best local restaurants. 5 stops with tapas and wine pairings. Authentic Canarian cuisine.",
@@ -106,6 +274,62 @@
     "is_featured": true,
     "active": true,
     "id": "69c95361e554cd658544fbb3"
+  },
+  {
+    "name": "Volcano Dinner at Timanfaya",
+    "name_es": "Cena Volcanica en Timanfaya",
+    "category": "dining",
+    "price_eur": 85.0,
+    "price_credits": 13.0,
+    "duration": "4 hours",
+    "location": "Hotel pickup",
+    "provider": "Lanzarote Experience Tours",
+    "commission_percentage": 25.0,
+    "description": "Exclusive evening tour to Timanfaya with dinner cooked over volcanic heat. Sunset views over the fire mountains.",
+    "description_es": "Tour exclusivo nocturno a Timanfaya con cena cocinada sobre calor volcanico. Vistas del atardecer sobre las montanas de fuego.",
+    "features": [
+      "Volcano-cooked dinner",
+      "Sunset views",
+      "Premium experience",
+      "Wine included"
+    ],
+    "features_es": [
+      "Cena cocinada en volcan",
+      "Vistas atardecer",
+      "Experiencia premium",
+      "Vino incluido"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "Lanzarote by Night Food Tour",
+    "name_es": "Lanzarote de Noche Tour Gastronomico",
+    "category": "dining",
+    "price_eur": 60.0,
+    "price_credits": 9.0,
+    "duration": "3.5 hours",
+    "location": "Puerto del Carmen",
+    "provider": "Lanzarote Food Tours",
+    "commission_percentage": 22.0,
+    "description": "Evening walking food tour through hidden local restaurants. 4 stops with wine pairings and live music surprise.",
+    "description_es": "Tour gastronomico nocturno a pie por restaurantes locales escondidos. 4 paradas con maridaje de vinos y sorpresa de musica en vivo.",
+    "features": [
+      "4 restaurant stops",
+      "Wine pairings",
+      "Live music",
+      "Local secrets"
+    ],
+    "features_es": [
+      "4 paradas restaurantes",
+      "Maridaje vinos",
+      "Musica en vivo",
+      "Secretos locales"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
   },
   {
     "name": "Timanfaya National Park Guided Tour",
@@ -216,6 +440,118 @@
     "id": "69c94e578ae148fd5a07fcdf"
   },
   {
+    "name": "Grand Tour Lanzarote (Timanfaya + Jameos + La Geria)",
+    "name_es": "Gran Tour Lanzarote (Timanfaya + Jameos + La Geria)",
+    "category": "excursions",
+    "price_eur": 65.0,
+    "price_credits": 10.0,
+    "duration": "7-8 hours",
+    "location": "Hotel pickup",
+    "provider": "Lanzarote Experience Tours",
+    "commission_percentage": 20.0,
+    "description": "Complete island tour covering Timanfaya National Park, Jameos del Agua, and La Geria wine region. Full day with guide and transport.",
+    "description_es": "Tour completo de la isla incluyendo Parque Nacional de Timanfaya, Jameos del Agua y region vinicola de La Geria. Dia completo con guia y transporte.",
+    "features": [
+      "Full day tour",
+      "Expert guide",
+      "Lunch included",
+      "3 iconic stops"
+    ],
+    "features_es": [
+      "Tour dia completo",
+      "Guia experto",
+      "Almuerzo incluido",
+      "3 paradas iconicas"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "South Tour (Timanfaya + La Geria)",
+    "name_es": "Tour del Sur (Timanfaya + La Geria)",
+    "category": "excursions",
+    "price_eur": 38.0,
+    "price_credits": 6.0,
+    "duration": "4-5 hours",
+    "location": "Hotel pickup",
+    "provider": "OkLanzarote",
+    "commission_percentage": 18.0,
+    "description": "Half-day tour to the volcanic south. Visit Timanfaya fire mountains and taste wines in La Geria volcanic vineyards.",
+    "description_es": "Tour de medio dia al sur volcanico. Visita las montanas de fuego de Timanfaya y degusta vinos en los vinedos volcanicos de La Geria.",
+    "features": [
+      "Half-day",
+      "Timanfaya entry",
+      "Wine tasting",
+      "Bus transport"
+    ],
+    "features_es": [
+      "Medio dia",
+      "Entrada Timanfaya",
+      "Cata de vinos",
+      "Transporte bus"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "Whale & Dolphin Watching Eco Catamaran",
+    "name_es": "Avistamiento de Ballenas y Delfines Eco Catamaran",
+    "category": "excursions",
+    "price_eur": 55.0,
+    "price_credits": 8.0,
+    "duration": "2.5 hours",
+    "location": "Puerto Calero",
+    "provider": "Club Canary",
+    "commission_percentage": 22.0,
+    "description": "Eco-friendly catamaran cruise to spot whales and dolphins in their natural habitat. First electric catamaran in the Canary Islands.",
+    "description_es": "Crucero en catamaran ecologico para avistar ballenas y delfines en su habitat natural. Primer catamaran electrico de Canarias.",
+    "features": [
+      "Eco-friendly",
+      "Marine biologist",
+      "Drinks included",
+      "High success rate"
+    ],
+    "features_es": [
+      "Ecologico",
+      "Biologo marino",
+      "Bebidas incluidas",
+      "Alta tasa avistamiento"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "Full Day Fuerteventura Trip",
+    "name_es": "Excursion Dia Completo a Fuerteventura",
+    "category": "excursions",
+    "price_eur": 75.0,
+    "price_credits": 12.0,
+    "duration": "10 hours",
+    "location": "Hotel pickup + Ferry",
+    "provider": "CANCO Travel",
+    "commission_percentage": 20.0,
+    "description": "Day trip to neighboring Fuerteventura. Ferry crossing, guided tour of main attractions, and free time on Corralejo dunes.",
+    "description_es": "Excursion de dia a Fuerteventura. Travesia en ferry, tour guiado de atracciones principales y tiempo libre en dunas de Corralejo.",
+    "features": [
+      "Ferry included",
+      "Guided tour",
+      "Corralejo dunes",
+      "Full day"
+    ],
+    "features_es": [
+      "Ferry incluido",
+      "Tour guiado",
+      "Dunas Corralejo",
+      "Dia completo"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
     "name": "Pub Crawl Puerto del Carmen",
     "name_es": "Ruta de Bares por Puerto del Carmen",
     "description": "The ultimate night out! Tour 4 of the best bars and pubs. Welcome shots, drink deals, games, and a local guide.",
@@ -241,6 +577,90 @@
     "is_featured": true,
     "active": true,
     "id": "69c95361e554cd658544fbb7"
+  },
+  {
+    "name": "Comedy Drag Night Show",
+    "name_es": "Espectaculo Comedy Drag Night",
+    "category": "nightlife",
+    "price_eur": 40.0,
+    "price_credits": 6.0,
+    "duration": "2 hours",
+    "location": "Avenida de las Playas",
+    "provider": "Puerto del Carmen Entertainment",
+    "commission_percentage": 18.0,
+    "description": "The legendary drag comedy show of Puerto del Carmen. Dinner option available. Hilarious entertainment for adults.",
+    "description_es": "El legendario espectaculo de comedia drag de Puerto del Carmen. Opcion cena disponible. Entretenimiento hilarante para adultos.",
+    "features": [
+      "Live show",
+      "Drinks included",
+      "Dinner option",
+      "Adults only"
+    ],
+    "features_es": [
+      "Show en vivo",
+      "Bebidas incluidas",
+      "Opcion cena",
+      "Solo adultos"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "Airport Transfer Sedan (1-3 pax)",
+    "name_es": "Transfer Aeropuerto Sedan (1-3 pax)",
+    "category": "transfers",
+    "price_eur": 35.0,
+    "price_credits": 5.0,
+    "duration": "25-40 minutes",
+    "location": "Lanzarote Airport ACE",
+    "provider": "Premium Transfers Lanzarote",
+    "commission_percentage": 20.0,
+    "description": "Private sedan transfer from Lanzarote airport to any hotel. Meet & greet, flight tracking, and luggage assistance.",
+    "description_es": "Transfer privado en sedan desde aeropuerto de Lanzarote a cualquier hotel. Recepcion, seguimiento de vuelo y asistencia equipaje.",
+    "features": [
+      "Private sedan",
+      "Meet & greet",
+      "Flight tracking",
+      "Door to door"
+    ],
+    "features_es": [
+      "Sedan privado",
+      "Recepcion",
+      "Seguimiento vuelo",
+      "Puerta a puerta"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
+  },
+  {
+    "name": "Airport Transfer Minivan (4-7 pax)",
+    "name_es": "Transfer Aeropuerto Minivan (4-7 pax)",
+    "category": "transfers",
+    "price_eur": 55.0,
+    "price_credits": 8.0,
+    "duration": "25-40 minutes",
+    "location": "Lanzarote Airport ACE",
+    "provider": "Premium Transfers Lanzarote",
+    "commission_percentage": 20.0,
+    "description": "Private minivan transfer for groups and families. Comfortable Mercedes van with child seats available.",
+    "description_es": "Transfer privado en minivan para grupos y familias. Furgoneta Mercedes comoda con sillas infantiles disponibles.",
+    "features": [
+      "Minivan 7 seats",
+      "Child seats",
+      "Luggage space",
+      "Mercedes van"
+    ],
+    "features_es": [
+      "Minivan 7 plazas",
+      "Sillas infantiles",
+      "Espacio equipaje",
+      "Furgoneta Mercedes"
+    ],
+    "integration_type": "manual",
+    "is_featured": true,
+    "active": true
   },
   {
     "name": "Aloe Vera Spa Experience",
@@ -322,6 +742,314 @@
     "is_featured": false,
     "active": true,
     "id": "69c94e578ae148fd5a07fce4"
+  },
+  {
+    "name": "Jet Ski Experience",
+    "name_es": "Experiencia en Moto de Agua",
+    "category": "adventure",
+    "price_eur": 55.0,
+    "price_credits": 8.0,
+    "duration": "40 minutes",
+    "location": "Playa Blanca",
+    "provider": "H2O Sports Lanzarote",
+    "commission_percentage": 20.0,
+    "description": "High-speed jet ski ride along the coast of Playa Blanca with stunning views of Fuerteventura.",
+    "description_es": "Paseo en moto de agua a alta velocidad por la costa de Playa Blanca con vistas impresionantes de Fuerteventura.",
+    "features": [
+      "40 min ride",
+      "Safety briefing",
+      "Life jacket",
+      "Fuerteventura views"
+    ],
+    "features_es": [
+      "40 min",
+      "Briefing seguridad",
+      "Chaleco salvavidas",
+      "Vistas Fuerteventura"
+    ],
+    "integration_type": "manual",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "Self-Drive Boat (No License)",
+    "name_es": "Barco Sin Licencia",
+    "category": "adventure",
+    "price_eur": 80.0,
+    "price_credits": 12.0,
+    "duration": "2 hours",
+    "location": "Puerto del Carmen",
+    "provider": "Ocean Adventures",
+    "commission_percentage": 18.0,
+    "description": "Explore the coast at your own pace in a self-drive boat. No license required. Up to 6 people.",
+    "description_es": "Explora la costa a tu ritmo en un barco sin licencia. No se requiere titulacion. Hasta 6 personas.",
+    "features": [
+      "No license needed",
+      "Up to 6 people",
+      "2 hours",
+      "Explore freely"
+    ],
+    "features_es": [
+      "Sin licencia",
+      "Hasta 6 personas",
+      "2 horas",
+      "Explora libremente"
+    ],
+    "integration_type": "manual",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "Senderismo Parque Natural Volcanes",
+    "name_es": "Hiking Volcanic Natural Park",
+    "category": "adventure",
+    "price_eur": 35.0,
+    "price_credits": 5.0,
+    "duration": "3-4 hours",
+    "location": "Hotel pickup",
+    "provider": "Feeling Lanzarote Tours",
+    "commission_percentage": 20.0,
+    "description": "Guided hike through the volcanic natural park with expert local guide. Moderate difficulty, stunning views.",
+    "description_es": "Senderismo guiado por el parque natural volcanico con guia local experto. Dificultad moderada, vistas impresionantes.",
+    "features": [
+      "Expert guide",
+      "3-4 hours",
+      "Moderate level",
+      "Water included"
+    ],
+    "features_es": [
+      "Guia experto",
+      "3-4 horas",
+      "Nivel moderado",
+      "Agua incluida"
+    ],
+    "integration_type": "manual",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "Parasailing Playa Blanca",
+    "name_es": "Parasailing Playa Blanca",
+    "category": "adventure",
+    "price_eur": 50.0,
+    "price_credits": 8.0,
+    "duration": "15-20 minutes",
+    "location": "Playa Blanca",
+    "provider": "H2O Sports Lanzarote",
+    "commission_percentage": 20.0,
+    "description": "Fly over the turquoise waters of Playa Blanca. Solo or tandem flights. Views of Fuerteventura included.",
+    "description_es": "Vuela sobre las aguas turquesas de Playa Blanca. Vuelos individuales o tandem. Vistas de Fuerteventura incluidas.",
+    "features": [
+      "15-20 min flight",
+      "Solo or tandem",
+      "Safety gear",
+      "Fuerteventura views"
+    ],
+    "features_es": [
+      "15-20 min vuelo",
+      "Solo o tandem",
+      "Equipo seguridad",
+      "Vistas Fuerteventura"
+    ],
+    "integration_type": "manual",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "Submarine Lanzarote",
+    "name_es": "Submarino Lanzarote",
+    "category": "attractions",
+    "price_eur": 30.0,
+    "price_credits": 5.0,
+    "duration": "1 hour",
+    "location": "Puerto Calero",
+    "provider": "Submarine Safaris",
+    "commission_percentage": 15.0,
+    "description": "Descend to 30 meters in a real submarine and explore the underwater world of Lanzarote. See marine life and shipwrecks.",
+    "description_es": "Desciende a 30 metros en un submarino real y explora el mundo submarino de Lanzarote. Ve vida marina y pecios.",
+    "features": [
+      "Real submarine",
+      "30m depth",
+      "Marine life",
+      "Family friendly"
+    ],
+    "features_es": [
+      "Submarino real",
+      "30m profundidad",
+      "Vida marina",
+      "Familiar"
+    ],
+    "integration_type": "manual",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "Aqualava Waterpark",
+    "name_es": "Aqualava Parque Acuatico",
+    "category": "attractions",
+    "price_eur": 22.0,
+    "price_credits": 3.0,
+    "duration": "Full day",
+    "location": "Playa Blanca",
+    "provider": "Aqualava Waterpark",
+    "commission_percentage": 12.0,
+    "description": "Lanzarote's main water park with slides, pools, and relaxation areas. Fun for the whole family.",
+    "description_es": "Principal parque acuatico de Lanzarote con toboganes, piscinas y zonas de relax. Diversion para toda la familia.",
+    "features": [
+      "Water slides",
+      "Wave pool",
+      "Kids area",
+      "Sunbeds included"
+    ],
+    "features_es": [
+      "Toboganes",
+      "Piscina de olas",
+      "Zona infantil",
+      "Hamacas incluidas"
+    ],
+    "integration_type": "manual",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "Rancho Texas Animal Park",
+    "name_es": "Rancho Texas Parque Animal",
+    "category": "attractions",
+    "price_eur": 25.0,
+    "price_credits": 4.0,
+    "duration": "Full day",
+    "location": "Puerto del Carmen",
+    "provider": "Rancho Texas",
+    "commission_percentage": 12.0,
+    "description": "Animal and nature park with shows, pool, and encounters. Sea lions, dolphins, parrots, and more.",
+    "description_es": "Parque animal y natural con espectaculos, piscina y encuentros. Leones marinos, delfines, loros y mas.",
+    "features": [
+      "Animal shows",
+      "Pool access",
+      "Sea lion encounter",
+      "Family park"
+    ],
+    "features_es": [
+      "Espectaculos animales",
+      "Acceso piscina",
+      "Encuentro leones marinos",
+      "Parque familiar"
+    ],
+    "integration_type": "manual",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "SUP Paddleboard Rental",
+    "name_es": "Alquiler Stand Up Paddleboard",
+    "category": "beach",
+    "price_eur": 20.0,
+    "price_credits": 3.0,
+    "duration": "2 hours",
+    "location": "Playa Grande, Puerto del Carmen",
+    "provider": "Beach Club Puerto del Carmen",
+    "commission_percentage": 18.0,
+    "description": "Stand Up Paddleboard rental with brief instruction. Explore the coast of Puerto del Carmen from the water.",
+    "description_es": "Alquiler de Stand Up Paddleboard con instruccion breve. Explora la costa de Puerto del Carmen desde el agua.",
+    "features": [
+      "Board + paddle",
+      "Brief lesson",
+      "Life jacket",
+      "2 hours"
+    ],
+    "features_es": [
+      "Tabla + remo",
+      "Leccion breve",
+      "Chaleco",
+      "2 horas"
+    ],
+    "integration_type": "manual",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "Economy Car Rental (Fiat 500 or similar)",
+    "name_es": "Alquiler Coche Economico (Fiat 500 o similar)",
+    "category": "car_rental",
+    "price_eur": 25.0,
+    "price_credits": 4.0,
+    "duration": "1-7 days",
+    "location": "Hotel delivery",
+    "provider": "Cicar Lanzarote",
+    "commission_percentage": 12.0,
+    "description": "Affordable economy car with full insurance. Free delivery to your hotel. GPS and child seats available.",
+    "description_es": "Coche economico con seguro completo. Entrega gratis en tu hotel. GPS y sillas infantiles disponibles.",
+    "features": [
+      "Full insurance",
+      "Hotel delivery",
+      "GPS available",
+      "Unlimited km"
+    ],
+    "features_es": [
+      "Seguro completo",
+      "Entrega hotel",
+      "GPS disponible",
+      "Km ilimitados"
+    ],
+    "integration_type": "api",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "SUV Rental (Nissan Qashqai or similar)",
+    "name_es": "Alquiler SUV (Nissan Qashqai o similar)",
+    "category": "car_rental",
+    "price_eur": 45.0,
+    "price_credits": 7.0,
+    "duration": "1-7 days",
+    "location": "Hotel delivery",
+    "provider": "Cicar Lanzarote",
+    "commission_percentage": 12.0,
+    "description": "Spacious SUV perfect for exploring the island. Full insurance, unlimited mileage, and hotel delivery.",
+    "description_es": "SUV espacioso perfecto para explorar la isla. Seguro completo, kilometraje ilimitado y entrega en hotel.",
+    "features": [
+      "SUV",
+      "Full insurance",
+      "Unlimited km",
+      "Hotel delivery"
+    ],
+    "features_es": [
+      "SUV",
+      "Seguro completo",
+      "Km ilimitados",
+      "Entrega hotel"
+    ],
+    "integration_type": "api",
+    "is_featured": false,
+    "active": true
+  },
+  {
+    "name": "E-Scooter Rental",
+    "name_es": "Alquiler Patinete Electrico",
+    "category": "car_rental",
+    "price_eur": 15.0,
+    "price_credits": 2.0,
+    "duration": "Full day",
+    "location": "Puerto del Carmen center",
+    "provider": "Island Bikes",
+    "commission_percentage": 18.0,
+    "description": "Eco-friendly way to explore Puerto del Carmen. Helmet and lock included. Phone holder with map.",
+    "description_es": "Forma ecologica de explorar Puerto del Carmen. Casco y candado incluidos. Soporte movil con mapa.",
+    "features": [
+      "Electric scooter",
+      "Helmet",
+      "Lock",
+      "Phone holder"
+    ],
+    "features_es": [
+      "Patinete electrico",
+      "Casco",
+      "Candado",
+      "Soporte movil"
+    ],
+    "integration_type": "manual",
+    "is_featured": false,
+    "active": true
   },
   {
     "name": "Wine Tasting Tour - La Geria Vineyards",
@@ -430,733 +1158,5 @@
     "is_featured": false,
     "active": true,
     "id": "69c95361e554cd658544fbb6"
-  },
-  {
-    "name": "Grand Tour Lanzarote (Timanfaya + Jameos + La Geria)",
-    "name_es": "Gran Tour Lanzarote (Timanfaya + Jameos + La Geria)",
-    "category": "excursions",
-    "price_eur": 65.0,
-    "price_credits": 10.0,
-    "duration": "7-8 hours",
-    "location": "Hotel pickup",
-    "provider": "Lanzarote Experience Tours",
-    "commission_percentage": 20.0,
-    "description": "Complete island tour covering Timanfaya National Park, Jameos del Agua, and La Geria wine region. Full day with guide and transport.",
-    "description_es": "Tour completo de la isla incluyendo Parque Nacional de Timanfaya, Jameos del Agua y region vinicola de La Geria. Dia completo con guia y transporte.",
-    "features": [
-      "Full day tour",
-      "Expert guide",
-      "Lunch included",
-      "3 iconic stops"
-    ],
-    "features_es": [
-      "Tour dia completo",
-      "Guia experto",
-      "Almuerzo incluido",
-      "3 paradas iconicas"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "South Tour (Timanfaya + La Geria)",
-    "name_es": "Tour del Sur (Timanfaya + La Geria)",
-    "category": "excursions",
-    "price_eur": 38.0,
-    "price_credits": 6.0,
-    "duration": "4-5 hours",
-    "location": "Hotel pickup",
-    "provider": "OkLanzarote",
-    "commission_percentage": 18.0,
-    "description": "Half-day tour to the volcanic south. Visit Timanfaya fire mountains and taste wines in La Geria volcanic vineyards.",
-    "description_es": "Tour de medio dia al sur volcanico. Visita las montanas de fuego de Timanfaya y degusta vinos en los vinedos volcanicos de La Geria.",
-    "features": [
-      "Half-day",
-      "Timanfaya entry",
-      "Wine tasting",
-      "Bus transport"
-    ],
-    "features_es": [
-      "Medio dia",
-      "Entrada Timanfaya",
-      "Cata de vinos",
-      "Transporte bus"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Whale & Dolphin Watching Eco Catamaran",
-    "name_es": "Avistamiento de Ballenas y Delfines Eco Catamaran",
-    "category": "excursions",
-    "price_eur": 55.0,
-    "price_credits": 8.0,
-    "duration": "2.5 hours",
-    "location": "Puerto Calero",
-    "provider": "Club Canary",
-    "commission_percentage": 22.0,
-    "description": "Eco-friendly catamaran cruise to spot whales and dolphins in their natural habitat. First electric catamaran in the Canary Islands.",
-    "description_es": "Crucero en catamaran ecologico para avistar ballenas y delfines en su habitat natural. Primer catamaran electrico de Canarias.",
-    "features": [
-      "Eco-friendly",
-      "Marine biologist",
-      "Drinks included",
-      "High success rate"
-    ],
-    "features_es": [
-      "Ecologico",
-      "Biologo marino",
-      "Bebidas incluidas",
-      "Alta tasa avistamiento"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Kayak & Snorkel Papagayo",
-    "name_es": "Kayak y Snorkel Papagayo",
-    "category": "adventure",
-    "price_eur": 45.0,
-    "price_credits": 7.0,
-    "duration": "2-3 hours",
-    "location": "Playa Blanca",
-    "provider": "H2O Sports Lanzarote",
-    "commission_percentage": 20.0,
-    "description": "Paddle through crystal-clear waters to the famous Papagayo beaches. Snorkeling equipment and guide included.",
-    "description_es": "Rema por aguas cristalinas hasta las famosas playas de Papagayo. Equipo de snorkel y guia incluidos.",
-    "features": [
-      "Kayak + Snorkel",
-      "Guide",
-      "Equipment included",
-      "Papagayo beaches"
-    ],
-    "features_es": [
-      "Kayak + Snorkel",
-      "Guia",
-      "Equipo incluido",
-      "Playas Papagayo"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Buggy Volcano Tour",
-    "name_es": "Buggy Tour Volcanico",
-    "category": "adventure",
-    "price_eur": 90.0,
-    "price_credits": 14.0,
-    "duration": "2-3 hours",
-    "location": "Hotel pickup",
-    "provider": "Low Cost Tours Lanzarote",
-    "commission_percentage": 18.0,
-    "description": "Drive your own buggy through volcanic landscapes and off-road trails. Helmets and insurance included.",
-    "description_es": "Conduce tu propio buggy por paisajes volcanicos y caminos off-road. Cascos y seguro incluidos.",
-    "features": [
-      "Drive your own buggy",
-      "Volcanic trails",
-      "Helmets included",
-      "Insurance"
-    ],
-    "features_es": [
-      "Conduce tu buggy",
-      "Rutas volcanicas",
-      "Cascos incluidos",
-      "Seguro"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Jet Ski Experience",
-    "name_es": "Experiencia en Moto de Agua",
-    "category": "adventure",
-    "price_eur": 55.0,
-    "price_credits": 8.0,
-    "duration": "40 minutes",
-    "location": "Playa Blanca",
-    "provider": "H2O Sports Lanzarote",
-    "commission_percentage": 20.0,
-    "description": "High-speed jet ski ride along the coast of Playa Blanca with stunning views of Fuerteventura.",
-    "description_es": "Paseo en moto de agua a alta velocidad por la costa de Playa Blanca con vistas impresionantes de Fuerteventura.",
-    "features": [
-      "40 min ride",
-      "Safety briefing",
-      "Life jacket",
-      "Fuerteventura views"
-    ],
-    "features_es": [
-      "40 min",
-      "Briefing seguridad",
-      "Chaleco salvavidas",
-      "Vistas Fuerteventura"
-    ],
-    "integration_type": "manual",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "Self-Drive Boat (No License)",
-    "name_es": "Barco Sin Licencia",
-    "category": "adventure",
-    "price_eur": 80.0,
-    "price_credits": 12.0,
-    "duration": "2 hours",
-    "location": "Puerto del Carmen",
-    "provider": "Ocean Adventures",
-    "commission_percentage": 18.0,
-    "description": "Explore the coast at your own pace in a self-drive boat. No license required. Up to 6 people.",
-    "description_es": "Explora la costa a tu ritmo en un barco sin licencia. No se requiere titulacion. Hasta 6 personas.",
-    "features": [
-      "No license needed",
-      "Up to 6 people",
-      "2 hours",
-      "Explore freely"
-    ],
-    "features_es": [
-      "Sin licencia",
-      "Hasta 6 personas",
-      "2 horas",
-      "Explora libremente"
-    ],
-    "integration_type": "manual",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "Wine Tour La Geria (4 Wineries)",
-    "name_es": "Tour del Vino La Geria (4 Bodegas)",
-    "category": "culture",
-    "price_eur": 65.0,
-    "price_credits": 10.0,
-    "duration": "5 hours",
-    "location": "Hotel pickup",
-    "provider": "Feeling Lanzarote Tours",
-    "commission_percentage": 22.0,
-    "description": "Visit 4 traditional volcanic wineries in La Geria. Taste Malvasia wines and learn about unique cultivation methods.",
-    "description_es": "Visita 4 bodegas volcanicas tradicionales en La Geria. Degusta vinos Malvasia y aprende sobre los metodos unicos de cultivo.",
-    "features": [
-      "4 wineries",
-      "Wine tasting",
-      "Tapas",
-      "Expert guide"
-    ],
-    "features_es": [
-      "4 bodegas",
-      "Cata de vinos",
-      "Tapas",
-      "Guia experto"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Cesar Manrique Art & Architecture Tour",
-    "name_es": "Tour Arte y Arquitectura Cesar Manrique",
-    "category": "culture",
-    "price_eur": 48.0,
-    "price_credits": 7.0,
-    "duration": "4 hours",
-    "location": "Hotel pickup",
-    "provider": "CANCO Travel",
-    "commission_percentage": 20.0,
-    "description": "Discover the artistic legacy of Cesar Manrique. Visit Fundacion Cesar Manrique, Jardin de Cactus, and Mirador del Rio.",
-    "description_es": "Descubre el legado artistico de Cesar Manrique. Visita Fundacion Cesar Manrique, Jardin de Cactus y Mirador del Rio.",
-    "features": [
-      "3 Manrique sites",
-      "Entry tickets",
-      "Guide",
-      "Transport"
-    ],
-    "features_es": [
-      "3 sitios Manrique",
-      "Entradas",
-      "Guia",
-      "Transporte"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Volcano Dinner at Timanfaya",
-    "name_es": "Cena Volcanica en Timanfaya",
-    "category": "dining",
-    "price_eur": 85.0,
-    "price_credits": 13.0,
-    "duration": "4 hours",
-    "location": "Hotel pickup",
-    "provider": "Lanzarote Experience Tours",
-    "commission_percentage": 25.0,
-    "description": "Exclusive evening tour to Timanfaya with dinner cooked over volcanic heat. Sunset views over the fire mountains.",
-    "description_es": "Tour exclusivo nocturno a Timanfaya con cena cocinada sobre calor volcanico. Vistas del atardecer sobre las montanas de fuego.",
-    "features": [
-      "Volcano-cooked dinner",
-      "Sunset views",
-      "Premium experience",
-      "Wine included"
-    ],
-    "features_es": [
-      "Cena cocinada en volcan",
-      "Vistas atardecer",
-      "Experiencia premium",
-      "Vino incluido"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Submarine Lanzarote",
-    "name_es": "Submarino Lanzarote",
-    "category": "attractions",
-    "price_eur": 30.0,
-    "price_credits": 5.0,
-    "duration": "1 hour",
-    "location": "Puerto Calero",
-    "provider": "Submarine Safaris",
-    "commission_percentage": 15.0,
-    "description": "Descend to 30 meters in a real submarine and explore the underwater world of Lanzarote. See marine life and shipwrecks.",
-    "description_es": "Desciende a 30 metros en un submarino real y explora el mundo submarino de Lanzarote. Ve vida marina y pecios.",
-    "features": [
-      "Real submarine",
-      "30m depth",
-      "Marine life",
-      "Family friendly"
-    ],
-    "features_es": [
-      "Submarino real",
-      "30m profundidad",
-      "Vida marina",
-      "Familiar"
-    ],
-    "integration_type": "manual",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "Aqualava Waterpark",
-    "name_es": "Aqualava Parque Acuatico",
-    "category": "attractions",
-    "price_eur": 22.0,
-    "price_credits": 3.0,
-    "duration": "Full day",
-    "location": "Playa Blanca",
-    "provider": "Aqualava Waterpark",
-    "commission_percentage": 12.0,
-    "description": "Lanzarote's main water park with slides, pools, and relaxation areas. Fun for the whole family.",
-    "description_es": "Principal parque acuatico de Lanzarote con toboganes, piscinas y zonas de relax. Diversion para toda la familia.",
-    "features": [
-      "Water slides",
-      "Wave pool",
-      "Kids area",
-      "Sunbeds included"
-    ],
-    "features_es": [
-      "Toboganes",
-      "Piscina de olas",
-      "Zona infantil",
-      "Hamacas incluidas"
-    ],
-    "integration_type": "manual",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "Rancho Texas Animal Park",
-    "name_es": "Rancho Texas Parque Animal",
-    "category": "attractions",
-    "price_eur": 25.0,
-    "price_credits": 4.0,
-    "duration": "Full day",
-    "location": "Puerto del Carmen",
-    "provider": "Rancho Texas",
-    "commission_percentage": 12.0,
-    "description": "Animal and nature park with shows, pool, and encounters. Sea lions, dolphins, parrots, and more.",
-    "description_es": "Parque animal y natural con espectaculos, piscina y encuentros. Leones marinos, delfines, loros y mas.",
-    "features": [
-      "Animal shows",
-      "Pool access",
-      "Sea lion encounter",
-      "Family park"
-    ],
-    "features_es": [
-      "Espectaculos animales",
-      "Acceso piscina",
-      "Encuentro leones marinos",
-      "Parque familiar"
-    ],
-    "integration_type": "manual",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "Airport Transfer Sedan (1-3 pax)",
-    "name_es": "Transfer Aeropuerto Sedan (1-3 pax)",
-    "category": "transfers",
-    "price_eur": 35.0,
-    "price_credits": 5.0,
-    "duration": "25-40 minutes",
-    "location": "Lanzarote Airport ACE",
-    "provider": "Premium Transfers Lanzarote",
-    "commission_percentage": 20.0,
-    "description": "Private sedan transfer from Lanzarote airport to any hotel. Meet & greet, flight tracking, and luggage assistance.",
-    "description_es": "Transfer privado en sedan desde aeropuerto de Lanzarote a cualquier hotel. Recepcion, seguimiento de vuelo y asistencia equipaje.",
-    "features": [
-      "Private sedan",
-      "Meet & greet",
-      "Flight tracking",
-      "Door to door"
-    ],
-    "features_es": [
-      "Sedan privado",
-      "Recepcion",
-      "Seguimiento vuelo",
-      "Puerta a puerta"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Airport Transfer Minivan (4-7 pax)",
-    "name_es": "Transfer Aeropuerto Minivan (4-7 pax)",
-    "category": "transfers",
-    "price_eur": 55.0,
-    "price_credits": 8.0,
-    "duration": "25-40 minutes",
-    "location": "Lanzarote Airport ACE",
-    "provider": "Premium Transfers Lanzarote",
-    "commission_percentage": 20.0,
-    "description": "Private minivan transfer for groups and families. Comfortable Mercedes van with child seats available.",
-    "description_es": "Transfer privado en minivan para grupos y familias. Furgoneta Mercedes comoda con sillas infantiles disponibles.",
-    "features": [
-      "Minivan 7 seats",
-      "Child seats",
-      "Luggage space",
-      "Mercedes van"
-    ],
-    "features_es": [
-      "Minivan 7 plazas",
-      "Sillas infantiles",
-      "Espacio equipaje",
-      "Furgoneta Mercedes"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Economy Car Rental (Fiat 500 or similar)",
-    "name_es": "Alquiler Coche Economico (Fiat 500 o similar)",
-    "category": "car_rental",
-    "price_eur": 25.0,
-    "price_credits": 4.0,
-    "duration": "1-7 days",
-    "location": "Hotel delivery",
-    "provider": "Cicar Lanzarote",
-    "commission_percentage": 12.0,
-    "description": "Affordable economy car with full insurance. Free delivery to your hotel. GPS and child seats available.",
-    "description_es": "Coche economico con seguro completo. Entrega gratis en tu hotel. GPS y sillas infantiles disponibles.",
-    "features": [
-      "Full insurance",
-      "Hotel delivery",
-      "GPS available",
-      "Unlimited km"
-    ],
-    "features_es": [
-      "Seguro completo",
-      "Entrega hotel",
-      "GPS disponible",
-      "Km ilimitados"
-    ],
-    "integration_type": "api",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "SUV Rental (Nissan Qashqai or similar)",
-    "name_es": "Alquiler SUV (Nissan Qashqai o similar)",
-    "category": "car_rental",
-    "price_eur": 45.0,
-    "price_credits": 7.0,
-    "duration": "1-7 days",
-    "location": "Hotel delivery",
-    "provider": "Cicar Lanzarote",
-    "commission_percentage": 12.0,
-    "description": "Spacious SUV perfect for exploring the island. Full insurance, unlimited mileage, and hotel delivery.",
-    "description_es": "SUV espacioso perfecto para explorar la isla. Seguro completo, kilometraje ilimitado y entrega en hotel.",
-    "features": [
-      "SUV",
-      "Full insurance",
-      "Unlimited km",
-      "Hotel delivery"
-    ],
-    "features_es": [
-      "SUV",
-      "Seguro completo",
-      "Km ilimitados",
-      "Entrega hotel"
-    ],
-    "integration_type": "api",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "Convertible Rental (VW T-Roc Cabrio or similar)",
-    "name_es": "Alquiler Descapotable (VW T-Roc Cabrio o similar)",
-    "category": "car_rental",
-    "price_eur": 65.0,
-    "price_credits": 10.0,
-    "duration": "1-7 days",
-    "location": "Hotel delivery",
-    "provider": "Cabrera Medina",
-    "commission_percentage": 15.0,
-    "description": "Experience Lanzarote with the top down. Full insurance and unlimited mileage included.",
-    "description_es": "Experimenta Lanzarote con el techo abierto. Seguro completo y kilometraje ilimitado incluidos.",
-    "features": [
-      "Convertible",
-      "Full insurance",
-      "Unlimited km",
-      "Premium experience"
-    ],
-    "features_es": [
-      "Descapotable",
-      "Seguro completo",
-      "Km ilimitados",
-      "Experiencia premium"
-    ],
-    "integration_type": "api",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "E-Scooter Rental",
-    "name_es": "Alquiler Patinete Electrico",
-    "category": "car_rental",
-    "price_eur": 15.0,
-    "price_credits": 2.0,
-    "duration": "Full day",
-    "location": "Puerto del Carmen center",
-    "provider": "Island Bikes",
-    "commission_percentage": 18.0,
-    "description": "Eco-friendly way to explore Puerto del Carmen. Helmet and lock included. Phone holder with map.",
-    "description_es": "Forma ecologica de explorar Puerto del Carmen. Casco y candado incluidos. Soporte movil con mapa.",
-    "features": [
-      "Electric scooter",
-      "Helmet",
-      "Lock",
-      "Phone holder"
-    ],
-    "features_es": [
-      "Patinete electrico",
-      "Casco",
-      "Candado",
-      "Soporte movil"
-    ],
-    "integration_type": "manual",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "Senderismo Parque Natural Volcanes",
-    "name_es": "Hiking Volcanic Natural Park",
-    "category": "adventure",
-    "price_eur": 35.0,
-    "price_credits": 5.0,
-    "duration": "3-4 hours",
-    "location": "Hotel pickup",
-    "provider": "Feeling Lanzarote Tours",
-    "commission_percentage": 20.0,
-    "description": "Guided hike through the volcanic natural park with expert local guide. Moderate difficulty, stunning views.",
-    "description_es": "Senderismo guiado por el parque natural volcanico con guia local experto. Dificultad moderada, vistas impresionantes.",
-    "features": [
-      "Expert guide",
-      "3-4 hours",
-      "Moderate level",
-      "Water included"
-    ],
-    "features_es": [
-      "Guia experto",
-      "3-4 horas",
-      "Nivel moderado",
-      "Agua incluida"
-    ],
-    "integration_type": "manual",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "Parasailing Playa Blanca",
-    "name_es": "Parasailing Playa Blanca",
-    "category": "adventure",
-    "price_eur": 50.0,
-    "price_credits": 8.0,
-    "duration": "15-20 minutes",
-    "location": "Playa Blanca",
-    "provider": "H2O Sports Lanzarote",
-    "commission_percentage": 20.0,
-    "description": "Fly over the turquoise waters of Playa Blanca. Solo or tandem flights. Views of Fuerteventura included.",
-    "description_es": "Vuela sobre las aguas turquesas de Playa Blanca. Vuelos individuales o tandem. Vistas de Fuerteventura incluidas.",
-    "features": [
-      "15-20 min flight",
-      "Solo or tandem",
-      "Safety gear",
-      "Fuerteventura views"
-    ],
-    "features_es": [
-      "15-20 min vuelo",
-      "Solo o tandem",
-      "Equipo seguridad",
-      "Vistas Fuerteventura"
-    ],
-    "integration_type": "manual",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "Full Day Fuerteventura Trip",
-    "name_es": "Excursion Dia Completo a Fuerteventura",
-    "category": "excursions",
-    "price_eur": 75.0,
-    "price_credits": 12.0,
-    "duration": "10 hours",
-    "location": "Hotel pickup + Ferry",
-    "provider": "CANCO Travel",
-    "commission_percentage": 20.0,
-    "description": "Day trip to neighboring Fuerteventura. Ferry crossing, guided tour of main attractions, and free time on Corralejo dunes.",
-    "description_es": "Excursion de dia a Fuerteventura. Travesia en ferry, tour guiado de atracciones principales y tiempo libre en dunas de Corralejo.",
-    "features": [
-      "Ferry included",
-      "Guided tour",
-      "Corralejo dunes",
-      "Full day"
-    ],
-    "features_es": [
-      "Ferry incluido",
-      "Tour guiado",
-      "Dunas Corralejo",
-      "Dia completo"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Comedy Drag Night Show",
-    "name_es": "Espectaculo Comedy Drag Night",
-    "category": "nightlife",
-    "price_eur": 40.0,
-    "price_credits": 6.0,
-    "duration": "2 hours",
-    "location": "Avenida de las Playas",
-    "provider": "Puerto del Carmen Entertainment",
-    "commission_percentage": 18.0,
-    "description": "The legendary drag comedy show of Puerto del Carmen. Dinner option available. Hilarious entertainment for adults.",
-    "description_es": "El legendario espectaculo de comedia drag de Puerto del Carmen. Opcion cena disponible. Entretenimiento hilarante para adultos.",
-    "features": [
-      "Live show",
-      "Drinks included",
-      "Dinner option",
-      "Adults only"
-    ],
-    "features_es": [
-      "Show en vivo",
-      "Bebidas incluidas",
-      "Opcion cena",
-      "Solo adultos"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "Lanzarote by Night Food Tour",
-    "name_es": "Lanzarote de Noche Tour Gastronomico",
-    "category": "dining",
-    "price_eur": 60.0,
-    "price_credits": 9.0,
-    "duration": "3.5 hours",
-    "location": "Puerto del Carmen",
-    "provider": "Lanzarote Food Tours",
-    "commission_percentage": 22.0,
-    "description": "Evening walking food tour through hidden local restaurants. 4 stops with wine pairings and live music surprise.",
-    "description_es": "Tour gastronomico nocturno a pie por restaurantes locales escondidos. 4 paradas con maridaje de vinos y sorpresa de musica en vivo.",
-    "features": [
-      "4 restaurant stops",
-      "Wine pairings",
-      "Live music",
-      "Local secrets"
-    ],
-    "features_es": [
-      "4 paradas restaurantes",
-      "Maridaje vinos",
-      "Musica en vivo",
-      "Secretos locales"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
-  },
-  {
-    "name": "SUP Paddleboard Rental",
-    "name_es": "Alquiler Stand Up Paddleboard",
-    "category": "beach",
-    "price_eur": 20.0,
-    "price_credits": 3.0,
-    "duration": "2 hours",
-    "location": "Playa Grande, Puerto del Carmen",
-    "provider": "Beach Club Puerto del Carmen",
-    "commission_percentage": 18.0,
-    "description": "Stand Up Paddleboard rental with brief instruction. Explore the coast of Puerto del Carmen from the water.",
-    "description_es": "Alquiler de Stand Up Paddleboard con instruccion breve. Explora la costa de Puerto del Carmen desde el agua.",
-    "features": [
-      "Board + paddle",
-      "Brief lesson",
-      "Life jacket",
-      "2 hours"
-    ],
-    "features_es": [
-      "Tabla + remo",
-      "Leccion breve",
-      "Chaleco",
-      "2 horas"
-    ],
-    "integration_type": "manual",
-    "is_featured": false,
-    "active": true
-  },
-  {
-    "name": "E-Paddleboard + Snorkel Papagayo",
-    "name_es": "E-Paddleboard + Snorkel Papagayo",
-    "category": "beach",
-    "price_eur": 65.0,
-    "price_credits": 10.0,
-    "duration": "2 hours",
-    "location": "Playa Blanca",
-    "provider": "H2O Sports Lanzarote",
-    "commission_percentage": 22.0,
-    "description": "Electric paddleboard experience to Papagayo coves with snorkeling stops. Emerging trend — SUP with motor assist.",
-    "description_es": "Experiencia en paddleboard electrico hasta las calas de Papagayo con paradas de snorkel. Tendencia emergente — SUP con asistencia de motor.",
-    "features": [
-      "Electric SUP",
-      "Snorkel gear",
-      "Papagayo coves",
-      "No experience needed"
-    ],
-    "features_es": [
-      "SUP electrico",
-      "Equipo snorkel",
-      "Calas Papagayo",
-      "Sin experiencia previa"
-    ],
-    "integration_type": "manual",
-    "is_featured": true,
-    "active": true
   }
 ]
