@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Concierge Pro — Your Digital Hotel Marketplace</title>
-    <meta name="description" content="Discover and book the best experiences in Lanzarote. Excursions, adventures, dining, wellness and more. Powered by Hotel Concierge Pro.">
-    <meta property="og:title" content="Hotel Concierge Pro — Lanzarote Experiences">
-    <meta property="og:description" content="Book unforgettable experiences in Lanzarote directly from your hotel.">
+    <title>Hotel Concierge Pro — Tu Marketplace Digital Hotelero</title>
+    <meta name="description" content="Descubre y reserva las mejores experiencias en Lanzarote. Excursiones, aventuras, gastronomia, bienestar y mas. Powered by Hotel Concierge Pro.">
+    <meta property="og:title" content="Hotel Concierge Pro — Experiencias en Lanzarote">
+    <meta property="og:description" content="Reserva experiencias inolvidables en Lanzarote directamente desde tu hotel.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1589519160732-57fc498494f8?w=1200">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hotel-conciergepro.com/">
+    <meta property="og:url" content="https://hotel-conciergepro.com/es/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Hotel Concierge Pro — Lanzarote Experiences">
-    <meta name="twitter:description" content="Book unforgettable experiences in Lanzarote directly from your hotel.">
-    <link rel="canonical" href="https://hotel-conciergepro.com/">
+    <meta name="twitter:title" content="Hotel Concierge Pro — Experiencias en Lanzarote">
+    <meta name="twitter:description" content="Reserva experiencias inolvidables en Lanzarote directamente desde tu hotel.">
+    <link rel="canonical" href="https://hotel-conciergepro.com/es/">
     <link rel="alternate" hreflang="en" href="https://hotel-conciergepro.com/">
     <link rel="alternate" hreflang="es" href="https://hotel-conciergepro.com/es/">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>">
@@ -795,10 +795,8 @@
         }
     }
 
-    // Auto-detect language
-    if (navigator.language && navigator.language.startsWith('es')) {
-        toggleLang();
-    }
+    // Spanish version: start in ES, toggle goes to EN
+    toggleLang(); // Switch to ES immediately
 
     let activeCat = 'all';
 

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/js/activities.js
+
+Sitemap: https://hotel-conciergepro.com/sitemap.xml
