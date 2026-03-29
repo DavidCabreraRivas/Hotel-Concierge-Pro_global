@@ -1,0 +1,434 @@
+[
+  {
+    "name": "Premium Car Rental - Volkswagen Golf",
+    "name_es": "Alquiler de Coche Premium - Volkswagen Golf",
+    "description": "Rent a comfortable Volkswagen Golf for your island exploration. Includes full insurance, GPS, and free delivery to your hotel.",
+    "description_es": "Alquila un comodo Volkswagen Golf para tu exploracion de la isla. Incluye seguro completo, GPS y entrega gratuita en tu hotel.",
+    "category": "adventure",
+    "price_credits": 150,
+    "price_eur": 150,
+    "duration": "1-7 days",
+    "location": "Hotel pickup available",
+    "provider": "Lanzarote Car Rentals",
+    "commission_percentage": 15,
+    "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800",
+    "features": [
+      "Full insurance",
+      "Free GPS",
+      "Unlimited km"
+    ],
+    "features_es": [
+      "Seguro completo",
+      "GPS gratis",
+      "Km ilimitados"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c94e578ae148fd5a07fcdd"
+  },
+  {
+    "name": "Hidden Beaches Jeep Safari",
+    "name_es": "Safari en Jeep por Playas Escondidas",
+    "description": "Discover Lanzarote's secret beaches by 4x4 jeep. Visit Papagayo, Playa Mujeres, and Playa del Pozo.",
+    "description_es": "Descubre las playas secretas de Lanzarote en jeep 4x4. Visita Papagayo, Playa Mujeres y Playa del Pozo.",
+    "category": "beach",
+    "price_credits": 85,
+    "price_eur": 85,
+    "duration": "5 hours",
+    "location": "Pickup from Puerto del Carmen",
+    "provider": "Island Safari Lanzarote",
+    "commission_percentage": 20,
+    "image_url": "https://images.unsplash.com/photo-1504681869696-d977211a5f4c?w=800",
+    "features": [
+      "4x4 Jeep",
+      "Picnic lunch",
+      "Snorkeling"
+    ],
+    "features_es": [
+      "Jeep 4x4",
+      "Picnic incluido",
+      "Snorkel"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c95361e554cd658544fbba"
+  },
+  {
+    "name": "Playa Grande VIP Sunbed Package",
+    "name_es": "Pack VIP Hamacas Playa Grande",
+    "description": "Premium front-row sunbeds at Playa Grande, Puerto del Carmen. 2 sunbeds, parasol, and 2 welcome drinks. Relax like a local.",
+    "description_es": "Hamacas premium en primera linea en Playa Grande, Puerto del Carmen. 2 hamacas, sombrilla y 2 bebidas de bienvenida. Relajate como un local.",
+    "category": "beach",
+    "price_credits": 40,
+    "price_eur": 40,
+    "duration": "Full day",
+    "location": "Playa Grande, Puerto del Carmen",
+    "provider": "Beach Club Puerto del Carmen",
+    "commission_percentage": 18,
+    "image_url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+    "features": [
+      "2 sunbeds",
+      "Welcome drinks",
+      "Front row"
+    ],
+    "features_es": [
+      "2 hamacas",
+      "Bebidas bienvenida",
+      "Primera linea"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c95361e554cd658544fbb9"
+  },
+  {
+    "name": "Tapas & Wine Walking Tour Puerto del Carmen",
+    "name_es": "Tour de Tapas y Vino por Puerto del Carmen",
+    "description": "Guided walking tour through the best local restaurants. 5 stops with tapas and wine pairings. Authentic Canarian cuisine.",
+    "description_es": "Tour guiado a pie por los mejores restaurantes locales. 5 paradas con tapas y maridaje de vinos. Cocina canaria autentica.",
+    "category": "dining",
+    "price_credits": 55,
+    "price_eur": 55,
+    "duration": "3 hours",
+    "location": "Puerto del Carmen, Avenida de las Playas",
+    "provider": "Lanzarote Food Tours",
+    "commission_percentage": 20,
+    "image_url": "https://images.unsplash.com/photo-1515443961218-a51367888e4b?w=800",
+    "features": [
+      "5 stops",
+      "Wine pairings",
+      "Local guide"
+    ],
+    "features_es": [
+      "5 paradas",
+      "Maridaje vinos",
+      "Guia local"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c95361e554cd658544fbb3"
+  },
+  {
+    "name": "Timanfaya National Park Guided Tour",
+    "name_es": "Tour Guiado del Parque Nacional de Timanfaya",
+    "description": "Discover the volcanic wonders of Timanfaya with expert guides. Witness geothermal demonstrations and lunar landscapes.",
+    "description_es": "Descubre las maravillas volcanicas de Timanfaya con guias expertos. Presencia demostraciones geotermicas y paisajes lunares.",
+    "category": "excursions",
+    "price_credits": 95,
+    "price_eur": 95,
+    "duration": "4 hours",
+    "location": "Hotel pickup",
+    "provider": "Volcano Tours Lanzarote",
+    "commission_percentage": 20,
+    "image_url": "https://images.unsplash.com/photo-1589519160732-57fc498494f8?w=800",
+    "features": [
+      "Expert guide",
+      "Geothermal demo",
+      "Park entrance"
+    ],
+    "features_es": [
+      "Guia experto",
+      "Demo geotermica",
+      "Entrada al parque"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c94e578ae148fd5a07fce0"
+  },
+  {
+    "name": "La Graciosa Island Day Trip",
+    "name_es": "Excursion de un Dia a La Graciosa",
+    "description": "Full day excursion to the pristine island of La Graciosa. Includes ferry tickets, beach time, and seafood lunch.",
+    "description_es": "Excursion de dia completo a la isla virgen de La Graciosa. Incluye billetes de ferry, tiempo en la playa y almuerzo de mariscos.",
+    "category": "excursions",
+    "price_credits": 120,
+    "price_eur": 120,
+    "duration": "8 hours",
+    "location": "Orzola port",
+    "provider": "Graciosa Adventures",
+    "commission_percentage": 22,
+    "image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800",
+    "features": [
+      "Ferry round trip",
+      "Seafood lunch",
+      "Snorkeling gear"
+    ],
+    "features_es": [
+      "Ferry ida y vuelta",
+      "Almuerzo mariscos",
+      "Equipo snorkel"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c94e578ae148fd5a07fce1"
+  },
+  {
+    "name": "Sunset Catamaran Cruise",
+    "name_es": "Crucero en Catamaran al Atardecer",
+    "description": "Sail along the coast on a luxury catamaran. Includes drinks, snacks, and stunning sunset views.",
+    "description_es": "Navega por la costa en un catamaran de lujo. Incluye bebidas, aperitivos y vistas impresionantes del atardecer.",
+    "category": "excursions",
+    "price_credits": 110,
+    "price_eur": 110,
+    "duration": "3 hours",
+    "location": "Puerto del Carmen marina",
+    "provider": "Ocean Adventures",
+    "commission_percentage": 20,
+    "image_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800",
+    "features": [
+      "Open bar",
+      "Sunset views",
+      "Swimming stop"
+    ],
+    "features_es": [
+      "Barra libre",
+      "Vistas atardecer",
+      "Parada natacion"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c94e578ae148fd5a07fce2"
+  },
+  {
+    "name": "Private Airport Transfer - Luxury Van",
+    "name_es": "Traslado Privado al Aeropuerto - Furgoneta de Lujo",
+    "description": "Comfortable private transfer between airport and hotel in a luxury Mercedes van. Meet & greet service included.",
+    "description_es": "Traslado privado comodo entre aeropuerto y hotel en furgoneta Mercedes de lujo. Servicio de recepcion incluido.",
+    "category": "excursions",
+    "price_credits": 80,
+    "price_eur": 80,
+    "duration": "30-45 minutes",
+    "location": "Lanzarote Airport",
+    "provider": "Premium Transfers Lanzarote",
+    "commission_percentage": 18,
+    "image_url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800",
+    "features": [
+      "Meet & greet",
+      "Flight tracking",
+      "Free waiting"
+    ],
+    "features_es": [
+      "Recepcion personalizada",
+      "Seguimiento vuelo",
+      "Espera gratis"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c94e578ae148fd5a07fcdf"
+  },
+  {
+    "name": "Pub Crawl Puerto del Carmen",
+    "name_es": "Ruta de Bares por Puerto del Carmen",
+    "description": "The ultimate night out! Tour 4 of the best bars and pubs. Welcome shots, drink deals, games, and a local guide.",
+    "description_es": "La mejor noche! Recorre 4 de los mejores bares y pubs. Shots de bienvenida, ofertas en bebidas, juegos y un guia local.",
+    "category": "nightlife",
+    "price_credits": 30,
+    "price_eur": 30,
+    "duration": "3 hours",
+    "location": "Avenida de las Playas, Puerto del Carmen",
+    "provider": "Lanzarote Nightlife",
+    "commission_percentage": 20,
+    "image_url": "https://images.unsplash.com/photo-1566417713940-fe7c7c98e5d6?w=800",
+    "features": [
+      "4 bar stops",
+      "Welcome shots",
+      "Party games"
+    ],
+    "features_es": [
+      "4 paradas",
+      "Shots bienvenida",
+      "Juegos fiesta"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c95361e554cd658544fbb7"
+  },
+  {
+    "name": "Aloe Vera Spa Experience",
+    "name_es": "Experiencia Spa Aloe Vera",
+    "description": "Relaxing spa treatment using locally grown Lanzarote aloe vera. Full body massage plus aloe vera facial and body wrap.",
+    "description_es": "Tratamiento spa relajante con aloe vera cultivado localmente en Lanzarote. Masaje corporal completo mas facial y envoltura de aloe vera.",
+    "category": "wellness",
+    "price_credits": 70,
+    "price_eur": 70,
+    "duration": "90 minutes",
+    "location": "Puerto del Carmen",
+    "provider": "Lanzarote Aloe Spa",
+    "commission_percentage": 20,
+    "image_url": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800",
+    "features": [
+      "90 min treatment",
+      "Local aloe vera",
+      "Hotel pickup"
+    ],
+    "features_es": [
+      "Tratamiento 90 min",
+      "Aloe vera local",
+      "Recogida hotel"
+    ],
+    "is_featured": true,
+    "active": true,
+    "id": "69c95361e554cd658544fbb5"
+  },
+  {
+    "name": "Electric Bike Rental with Route Map",
+    "name_es": "Alquiler de Bicicleta Electrica con Mapa de Rutas",
+    "description": "Explore Lanzarote on an electric bike with curated route recommendations. Includes helmet, lock, and emergency support.",
+    "description_es": "Explora Lanzarote en bicicleta electrica con recomendaciones de rutas seleccionadas. Incluye casco, candado y soporte de emergencia.",
+    "category": "adventure",
+    "price_credits": 45,
+    "price_eur": 45,
+    "duration": "Full day",
+    "location": "Multiple pickup points",
+    "provider": "Island Bikes",
+    "commission_percentage": 20,
+    "image_url": "https://images.unsplash.com/photo-1571333250630-f0230c320b6d?w=800",
+    "features": [
+      "Electric assist",
+      "Route maps",
+      "Helmet incl."
+    ],
+    "features_es": [
+      "Asistencia electrica",
+      "Mapas de rutas",
+      "Casco incl."
+    ],
+    "is_featured": false,
+    "active": true,
+    "id": "69c94e578ae148fd5a07fcde"
+  },
+  {
+    "name": "Surfing Lessons - Beginner Package",
+    "name_es": "Clases de Surf - Paquete Principiante",
+    "description": "Learn to surf with certified instructors at Famara Beach. All equipment provided and small group sizes.",
+    "description_es": "Aprende a surfear con instructores certificados en Playa de Famara. Todo el equipo incluido y grupos pequenos.",
+    "category": "adventure",
+    "price_credits": 60,
+    "price_eur": 60,
+    "duration": "2 hours",
+    "location": "Famara Beach",
+    "provider": "Famara Surf School",
+    "commission_percentage": 18,
+    "image_url": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=800",
+    "features": [
+      "Certified instructor",
+      "All equipment",
+      "Photos incl."
+    ],
+    "features_es": [
+      "Instructor certificado",
+      "Todo el equipo",
+      "Fotos incl."
+    ],
+    "is_featured": false,
+    "active": true,
+    "id": "69c94e578ae148fd5a07fce4"
+  },
+  {
+    "name": "Wine Tasting Tour - La Geria Vineyards",
+    "name_es": "Tour de Cata de Vinos - Vinedos de La Geria",
+    "description": "Visit traditional volcanic vineyards and taste award-winning Malvasia wines. Includes tapas and vineyard tour.",
+    "description_es": "Visita vinedos volcanicos tradicionales y degusta vinos Malvasia premiados. Incluye tapas y tour del vinedo.",
+    "category": "culture",
+    "price_credits": 75,
+    "price_eur": 75,
+    "duration": "3 hours",
+    "location": "La Geria wine region",
+    "provider": "La Geria Wine Tours",
+    "commission_percentage": 25,
+    "image_url": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800",
+    "features": [
+      "4 wine tastings",
+      "Tapas incl.",
+      "Expert sommelier"
+    ],
+    "features_es": [
+      "4 catas de vino",
+      "Tapas incl.",
+      "Sommelier experto"
+    ],
+    "is_featured": false,
+    "active": true,
+    "id": "69c94e578ae148fd5a07fce3"
+  },
+  {
+    "name": "Canarian Cooking Class with Market Visit",
+    "name_es": "Clase de Cocina Canaria con Visita al Mercado",
+    "description": "Learn to cook authentic Canarian dishes: papas arrugadas with mojo, gofio mousse, and fresh fish. Includes market visit.",
+    "description_es": "Aprende a cocinar platos canarios autenticos: papas arrugadas con mojo, mousse de gofio y pescado fresco. Incluye visita al mercado.",
+    "category": "dining",
+    "price_credits": 65,
+    "price_eur": 65,
+    "duration": "4 hours",
+    "location": "Teguise",
+    "provider": "Casa Cocina Lanzarote",
+    "commission_percentage": 18,
+    "image_url": "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800",
+    "features": [
+      "Hands-on",
+      "Market visit",
+      "Lunch incl."
+    ],
+    "features_es": [
+      "Practica",
+      "Visita mercado",
+      "Almuerzo incl."
+    ],
+    "is_featured": false,
+    "active": true,
+    "id": "69c95361e554cd658544fbb4"
+  },
+  {
+    "name": "Live Music & Cocktails Experience",
+    "name_es": "Musica en Vivo y Cocteles",
+    "description": "VIP table at a premium terrace with ocean views, live music, and 2 signature cocktails per person.",
+    "description_es": "Mesa VIP en terraza premium con vistas al mar, musica en vivo y 2 cocteles de autor por persona.",
+    "category": "nightlife",
+    "price_credits": 35,
+    "price_eur": 35,
+    "duration": "2-3 hours",
+    "location": "Centro Comercial Biosfera, Puerto del Carmen",
+    "provider": "Centro Comercial Biosfera",
+    "commission_percentage": 15,
+    "image_url": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800",
+    "features": [
+      "VIP table",
+      "2 cocktails",
+      "Ocean views"
+    ],
+    "features_es": [
+      "Mesa VIP",
+      "2 cocteles",
+      "Vistas al mar"
+    ],
+    "is_featured": false,
+    "active": true,
+    "id": "69c95361e554cd658544fbb8"
+  },
+  {
+    "name": "Sunrise Yoga at Playa Grande",
+    "name_es": "Yoga al Amanecer en Playa Grande",
+    "description": "Start your day with a peaceful yoga session on Puerto del Carmen's main beach. All levels welcome. Mat and smoothie included.",
+    "description_es": "Comienza tu dia con una sesion de yoga en la playa principal de Puerto del Carmen. Todos los niveles. Esterilla y smoothie incluidos.",
+    "category": "wellness",
+    "price_credits": 25,
+    "price_eur": 25,
+    "duration": "1 hour",
+    "location": "Playa Grande, Puerto del Carmen",
+    "provider": "Yoga Lanzarote",
+    "commission_percentage": 22,
+    "image_url": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800",
+    "features": [
+      "All levels",
+      "Mat provided",
+      "Smoothie incl."
+    ],
+    "features_es": [
+      "Todos los niveles",
+      "Esterilla incl.",
+      "Smoothie incl."
+    ],
+    "is_featured": false,
+    "active": true,
+    "id": "69c95361e554cd658544fbb6"
+  }
+]
