@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Concierge Pro — Your Digital Hotel Marketplace</title>
+    <meta name="description" content="Discover and book the best experiences in Lanzarote. Excursions, adventures, dining, wellness and more. Powered by Hotel Concierge Pro.">
+    <meta property="og:title" content="Hotel Concierge Pro — Lanzarote Experiences">
+    <meta property="og:description" content="Book unforgettable experiences in Lanzarote directly from your hotel.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1589519160732-57fc498494f8?w=1200">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f1b2d;
+            --accent: #c8a45c;
+            --accent-light: #e8d5a0;
+            --bg: #f8f6f1;
+            --card-bg: #ffffff;
+            --text: #1a1a2e;
+            --text-light: #6b7280;
+            --radius: 16px;
+            --shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); }
+
+        /* Navbar */
+        .navbar {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+            background: rgba(15,27,45,0.95); backdrop-filter: blur(12px);
+            padding: 0 2rem; height: 70px;
+            display: flex; align-items: center; justify-content: space-between;
+            border-bottom: 1px solid rgba(200,164,92,0.2);
+        }
+        .nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .nav-logo-icon {
+            width: 42px; height: 42px; border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), #a08030);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.1rem; color: white; font-weight: 700;
+        }
+        .nav-logo-text { color: white; font-size: 1.15rem; font-weight: 600; }
+        .nav-logo-text span { color: var(--accent); }
+        .nav-links { display: flex; gap: 2rem; align-items: center; }
+        .nav-links a { color: #ccc; text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--accent); }
+        .nav-right { display: flex; gap: 1rem; align-items: center; }
+        .lang-toggle {
+            background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+            color: white; padding: 6px 14px; border-radius: 20px; cursor: pointer;
+            font-size: 0.85rem; font-weight: 500; transition: all 0.2s;
+        }
+        .lang-toggle:hover { background: rgba(200,164,92,0.2); border-color: var(--accent); }
+        .btn-signin {
+            background: var(--accent); color: var(--primary); padding: 8px 20px;
+            border-radius: 25px; text-decoration: none; font-weight: 600;
+            font-size: 0.9rem; transition: all 0.2s; border: none; cursor: pointer;
+        }
+        .btn-signin:hover { background: var(--accent-light); transform: translateY(-1px); }
+
+        /* Hero */
+        .hero {
+            position: relative; min-height: 85vh; display: flex; align-items: center;
+            justify-content: center; text-align: center; overflow: hidden;
+            background: linear-gradient(135deg, #0f1b2d 0%, #1a2d4a 50%, #0f1b2d 100%);
+        }
+        .hero-bg {
+            position: absolute; inset: 0;
+            background: url('https://images.unsplash.com/photo-1589519160732-57fc498494f8?w=1600') center/cover;
+            opacity: 0.3;
+        }
+        .hero-content { position: relative; z-index: 2; max-width: 800px; padding: 2rem; }
+        .hero-badge {
+            display: inline-block; background: rgba(200,164,92,0.15);
+            border: 1px solid rgba(200,164,92,0.3); color: var(--accent);
+            padding: 6px 18px; border-radius: 20px; font-size: 0.85rem;
+            font-weight: 500; margin-bottom: 1.5rem; letter-spacing: 1px;
+        }
+        .hero h1 { color: white; font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1rem; }
+        .hero h1 span { color: var(--accent); }
+        .hero p { color: #b0b8c8; font-size: 1.2rem; line-height: 1.6; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+        .btn-primary {
+            background: var(--accent); color: var(--primary); padding: 14px 32px;
+            border-radius: 30px; text-decoration: none; font-weight: 700;
+            font-size: 1rem; transition: all 0.3s; border: none; cursor: pointer;
+        }
+        .btn-primary:hover { background: var(--accent-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(200,164,92,0.3); }
+        .btn-outline {
+            background: transparent; color: white; padding: 14px 32px;
+            border-radius: 30px; text-decoration: none; font-weight: 600;
+            font-size: 1rem; border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s; cursor: pointer;
+        }
+        .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+        .hero-stats { display: flex; gap: 3rem; justify-content: center; margin-top: 3rem; }
+        .hero-stat { text-align: center; }
+        .hero-stat .num { color: var(--accent); font-size: 2rem; font-weight: 800; }
+        .hero-stat .label { color: #8890a0; font-size: 0.85rem; margin-top: 4px; }
+
+        /* Hotel Banner */
+        .hotel-section { padding: 4rem 2rem; background: white; }
+        .hotel-card {
+            max-width: 1100px; margin: 0 auto; display: grid;
+            grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+        }
+        .hotel-img { border-radius: var(--radius); overflow: hidden; }
+        .hotel-img img { width: 100%; height: 350px; object-fit: cover; border-radius: var(--radius); }
+        .hotel-info h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hotel-info .tagline { color: var(--accent); font-weight: 600; margin-bottom: 1rem; }
+        .hotel-info p { color: var(--text-light); line-height: 1.7; margin-bottom: 1.5rem; }
+        .amenities { display: flex; flex-wrap: wrap; gap: 8px; }
+        .amenity {
+            background: var(--bg); padding: 6px 14px; border-radius: 20px;
+            font-size: 0.8rem; color: var(--text); font-weight: 500;
+        }
+
+        /* Categories */
+        .categories-section { padding: 3rem 2rem 1rem; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 2rem; }
+        .section-title h2 { font-size: 2.2rem; font-weight: 800; }
+        .section-title p { color: var(--text-light); margin-top: 0.5rem; font-size: 1.05rem; }
+        .cat-filters { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+        .cat-btn {
+            padding: 10px 22px; border-radius: 25px; border: 2px solid #e5e7eb;
+            background: white; cursor: pointer; font-weight: 600; font-size: 0.9rem;
+            transition: all 0.2s; color: var(--text);
+        }
+        .cat-btn:hover, .cat-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
+        .cat-icon { margin-right: 6px; }
+
+        /* Activity Grid */
+        .activities-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 1.5rem; max-width: 1200px; margin: 0 auto; padding: 0 2rem 4rem;
+        }
+        .activity-card {
+            background: var(--card-bg); border-radius: var(--radius); overflow: hidden;
+            box-shadow: var(--shadow); transition: all 0.3s; position: relative;
+        }
+        .activity-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+        .activity-card.hidden { display: none; }
+        .card-img { position: relative; height: 220px; overflow: hidden; }
+        .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+        .activity-card:hover .card-img img { transform: scale(1.05); }
+        .card-badge {
+            position: absolute; top: 12px; left: 12px;
+            background: rgba(15,27,45,0.85); color: white; padding: 4px 12px;
+            border-radius: 15px; font-size: 0.75rem; font-weight: 600; backdrop-filter: blur(4px);
+        }
+        .card-featured {
+            position: absolute; top: 12px; right: 12px;
+            background: var(--accent); color: var(--primary); padding: 4px 10px;
+            border-radius: 15px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase;
+        }
+        .card-body { padding: 1.2rem 1.4rem; }
+        .card-body h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.4rem; line-height: 1.3; }
+        .card-meta { display: flex; gap: 1rem; color: var(--text-light); font-size: 0.85rem; margin-bottom: 0.6rem; }
+        .card-meta span { display: flex; align-items: center; gap: 4px; }
+        .card-desc { color: var(--text-light); font-size: 0.9rem; line-height: 1.5; margin-bottom: 1rem;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .card-features { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1rem; }
+        .card-feature {
+            background: var(--bg); padding: 3px 10px; border-radius: 12px;
+            font-size: 0.75rem; color: var(--text-light); font-weight: 500;
+        }
+        .card-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 1rem; border-top: 1px solid #f0f0f0; }
+        .card-price { font-size: 1.4rem; font-weight: 800; color: var(--primary); }
+        .card-price span { font-size: 0.8rem; font-weight: 400; color: var(--text-light); }
+        .btn-book {
+            background: var(--primary); color: white; padding: 10px 22px;
+            border-radius: 25px; text-decoration: none; font-weight: 600;
+            font-size: 0.85rem; transition: all 0.2s; border: none; cursor: pointer;
+        }
+        .btn-book:hover { background: var(--accent); color: var(--primary); }
+
+        /* Footer */
+        .footer {
+            background: var(--primary); color: #8890a0; padding: 4rem 2rem 2rem;
+        }
+        .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; }
+        .footer h4 { color: white; font-size: 1rem; margin-bottom: 1rem; }
+        .footer p { font-size: 0.9rem; line-height: 1.6; }
+        .footer a { color: #8890a0; text-decoration: none; font-size: 0.9rem; display: block; margin-bottom: 0.5rem; transition: color 0.2s; }
+        .footer a:hover { color: var(--accent); }
+        .footer-bottom { max-width: 1100px; margin: 3rem auto 0; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-size: 0.85rem; }
+        .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+        .footer-logo-icon { width: 36px; height: 36px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--primary); font-size: 0.9rem; }
+        .footer-logo-text { color: white; font-weight: 600; font-size: 1.1rem; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .hero-stats { gap: 1.5rem; }
+            .hotel-card { grid-template-columns: 1fr; }
+            .activities-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .hero-stat .num { font-size: 1.5rem; }
+        }
+
+        /* Animations */
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .activity-card { animation: fadeUp 0.5s ease forwards; }
+        .activity-card:nth-child(2) { animation-delay: 0.05s; }
+        .activity-card:nth-child(3) { animation-delay: 0.1s; }
+        .activity-card:nth-child(4) { animation-delay: 0.15s; }
+        .activity-card:nth-child(5) { animation-delay: 0.2s; }
+        .activity-card:nth-child(6) { animation-delay: 0.25s; }
+
+        /* Search */
+        .search-bar { max-width: 500px; margin: 0 auto 2rem; position: relative; }
+        .search-bar input {
+            width: 100%; padding: 14px 20px 14px 48px; border-radius: 30px;
+            border: 2px solid #e5e7eb; font-size: 1rem; font-family: inherit;
+            transition: border-color 0.2s; background: white;
+        }
+        .search-bar input:focus { outline: none; border-color: var(--accent); }
+        .search-bar::before { content: "\1F50D"; position: absolute; left: 18px; top: 50%; transform: translateY(-50%); font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">HC</div>
+        <div class="nav-logo-text">Hotel <span>Concierge</span>Pro</div>
+    </a>
+    <div class="nav-links">
+        <a href="#experiences" data-en="Experiences" data-es="Experiencias">Experiences</a>
+        <a href="#hotel" data-en="Our Hotel" data-es="Nuestro Hotel">Our Hotel</a>
+        <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+    </div>
+    <div class="nav-right">
+        <button class="lang-toggle" onclick="toggleLang()">ES</button>
+        <a href="https://hotel-conciergepro.com/login" class="btn-signin" data-en="Sign In" data-es="Acceder">Sign In</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <div class="hero-badge" data-en="LANZAROTE, CANARY ISLANDS" data-es="LANZAROTE, ISLAS CANARIAS">LANZAROTE, CANARY ISLANDS</div>
+        <h1 data-en="Discover <span>Unforgettable</span> Experiences" data-es="Descubre Experiencias <span>Inolvidables</span>">Discover <span>Unforgettable</span> Experiences</h1>
+        <p data-en="Book the best excursions, adventures, dining and wellness experiences in Lanzarote directly from your hotel. Curated by Gueldera Apartments." data-es="Reserva las mejores excursiones, aventuras, gastronomia y bienestar en Lanzarote directamente desde tu hotel. Seleccionado por Gueldera Apartments.">Book the best excursions, adventures, dining and wellness experiences in Lanzarote directly from your hotel. Curated by Gueldera Apartments.</p>
+        <div class="hero-cta">
+            <a href="#experiences" class="btn-primary" data-en="Explore Activities" data-es="Explorar Actividades">Explore Activities</a>
+            <a href="#hotel" class="btn-outline" data-en="About Gueldera" data-es="Sobre Gueldera">About Gueldera</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat"><div class="num">16</div><div class="label" data-en="Experiences" data-es="Experiencias">Experiences</div></div>
+            <div class="hero-stat"><div class="num">7</div><div class="label" data-en="Categories" data-es="Categorias">Categories</div></div>
+            <div class="hero-stat"><div class="num">15%</div><div class="label" data-en="Best Commissions" data-es="Mejores Comisiones">Best Commissions</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Hotel Section -->
+<section class="hotel-section" id="hotel">
+    <div class="hotel-card">
+        <div class="hotel-img">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Gueldera Apartments" loading="lazy">
+        </div>
+        <div class="hotel-info">
+            <div class="tagline" data-en="Featured Hotel" data-es="Hotel Destacado">Featured Hotel</div>
+            <h2>Gueldera Apartments</h2>
+            <p data-en="3-star apartments in the heart of Puerto del Carmen, just 300m from Playa El Barranquillo. Fully equipped kitchens, free WiFi, private terraces, and surrounded by gardens. The perfect base for your Lanzarote adventure." data-es="Apartamentos de 3 estrellas en el corazon de Puerto del Carmen, a solo 300m de Playa El Barranquillo. Cocinas equipadas, WiFi gratis, terrazas privadas y rodeados de jardines. La base perfecta para tu aventura en Lanzarote.">3-star apartments in the heart of Puerto del Carmen, just 300m from Playa El Barranquillo. Fully equipped kitchens, free WiFi, private terraces, and surrounded by gardens. The perfect base for your Lanzarote adventure.</p>
+            <div class="amenities">
+                <span class="amenity">Free WiFi</span>
+                <span class="amenity">Free Parking</span>
+                <span class="amenity">Pool</span>
+                <span class="amenity">Kitchen</span>
+                <span class="amenity">A/C</span>
+                <span class="amenity">Terrace</span>
+                <span class="amenity">Bar</span>
+                <span class="amenity">Car Rental</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experiences -->
+<section id="experiences">
+    <div class="categories-section">
+        <div class="section-title">
+            <h2 data-en="Explore Experiences" data-es="Explora Experiencias">Explore Experiences</h2>
+            <p data-en="Handpicked activities for an unforgettable stay in Lanzarote" data-es="Actividades seleccionadas para una estancia inolvidable en Lanzarote">Handpicked activities for an unforgettable stay in Lanzarote</p>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search activities..." data-en-placeholder="Search activities..." data-es-placeholder="Buscar actividades..." oninput="filterActivities()">
+        </div>
+
+        <div class="cat-filters">
+            <button class="cat-btn active" data-cat="all" onclick="filterCat(this)" data-en="All" data-es="Todas"><span class="cat-icon">*</span> <span data-en="All" data-es="Todas">All</span></button>
+            <button class="cat-btn" data-cat="excursions" onclick="filterCat(this)"><span class="cat-icon">🚢</span> Excursions</button>
+            <button class="cat-btn" data-cat="adventure" onclick="filterCat(this)"><span class="cat-icon">🏄</span> Adventure</button>
+            <button class="cat-btn" data-cat="beach" onclick="filterCat(this)"><span class="cat-icon">🏖️</span> Beach</button>
+            <button class="cat-btn" data-cat="dining" onclick="filterCat(this)"><span class="cat-icon">🍷</span> Dining</button>
+            <button class="cat-btn" data-cat="wellness" onclick="filterCat(this)"><span class="cat-icon">🧘</span> Wellness</button>
+            <button class="cat-btn" data-cat="culture" onclick="filterCat(this)"><span class="cat-icon">🎭</span> Culture</button>
+            <button class="cat-btn" data-cat="nightlife" onclick="filterCat(this)"><span class="cat-icon">🌙</span> Nightlife</button>
+        </div>
+    </div>
+
+    <div class="activities-grid" id="activitiesGrid">
+
+        <!-- Timanfaya -->
+        <div class="activity-card" data-cat="excursions">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1589519160732-57fc498494f8?w=800" alt="Timanfaya" loading="lazy">
+                <span class="card-badge">Excursions</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Timanfaya National Park Guided Tour" data-es="Tour Guiado del Parque Nacional de Timanfaya">Timanfaya National Park Guided Tour</h3>
+                <div class="card-meta">
+                    <span>📍 Hotel pickup</span>
+                    <span>⏱️ 4 hours</span>
+                </div>
+                <p class="card-desc" data-en="Discover the volcanic wonders of Timanfaya with expert guides. Witness geothermal demonstrations and lunar landscapes." data-es="Descubre las maravillas volcanicas de Timanfaya con guias expertos. Presencia demostraciones geotermicas y paisajes lunares.">Discover the volcanic wonders of Timanfaya with expert guides. Witness geothermal demonstrations and lunar landscapes.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="Expert guide" data-es="Guia experto">Expert guide</span>
+                    <span class="card-feature" data-en="Geothermal demo" data-es="Demo geotermica">Geothermal demo</span>
+                    <span class="card-feature" data-en="Park entrance" data-es="Entrada al parque">Park entrance</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;95 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- La Graciosa -->
+        <div class="activity-card" data-cat="excursions">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="La Graciosa" loading="lazy">
+                <span class="card-badge">Excursions</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="La Graciosa Island Day Trip" data-es="Excursion de un Dia a La Graciosa">La Graciosa Island Day Trip</h3>
+                <div class="card-meta">
+                    <span>📍 Orzola port</span>
+                    <span>⏱️ 8 hours</span>
+                </div>
+                <p class="card-desc" data-en="Full day excursion to the pristine island of La Graciosa. Includes ferry tickets, beach time, and seafood lunch." data-es="Excursion de dia completo a la isla virgen de La Graciosa. Incluye billetes de ferry, tiempo en la playa y almuerzo de mariscos.">Full day excursion to the pristine island of La Graciosa. Includes ferry tickets, beach time, and seafood lunch.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="Ferry round trip" data-es="Ferry ida y vuelta">Ferry round trip</span>
+                    <span class="card-feature" data-en="Seafood lunch" data-es="Almuerzo mariscos">Seafood lunch</span>
+                    <span class="card-feature" data-en="Snorkeling gear" data-es="Equipo snorkel">Snorkeling gear</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;120 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sunset Catamaran -->
+        <div class="activity-card" data-cat="excursions">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800" alt="Catamaran" loading="lazy">
+                <span class="card-badge">Excursions</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Sunset Catamaran Cruise" data-es="Crucero en Catamaran al Atardecer">Sunset Catamaran Cruise</h3>
+                <div class="card-meta">
+                    <span>📍 Puerto del Carmen marina</span>
+                    <span>⏱️ 3 hours</span>
+                </div>
+                <p class="card-desc" data-en="Sail along the coast on a luxury catamaran. Includes drinks, snacks, and stunning sunset views." data-es="Navega por la costa en un catamaran de lujo. Incluye bebidas, aperitivos y vistas impresionantes del atardecer.">Sail along the coast on a luxury catamaran. Includes drinks, snacks, and stunning sunset views.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="Open bar" data-es="Barra libre">Open bar</span>
+                    <span class="card-feature" data-en="Sunset views" data-es="Vistas atardecer">Sunset views</span>
+                    <span class="card-feature" data-en="Swimming stop" data-es="Parada natacion">Swimming stop</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;110 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Airport Transfer -->
+        <div class="activity-card" data-cat="excursions">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800" alt="Transfer" loading="lazy">
+                <span class="card-badge">Excursions</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Private Airport Transfer - Luxury Van" data-es="Traslado Privado al Aeropuerto - Furgoneta de Lujo">Private Airport Transfer - Luxury Van</h3>
+                <div class="card-meta">
+                    <span>📍 Lanzarote Airport</span>
+                    <span>⏱️ 30-45 min</span>
+                </div>
+                <p class="card-desc" data-en="Comfortable private transfer between airport and hotel in a luxury Mercedes van. Meet & greet service included." data-es="Traslado privado comodo entre aeropuerto y hotel en furgoneta Mercedes de lujo. Servicio de recepcion incluido.">Comfortable private transfer between airport and hotel in a luxury Mercedes van. Meet & greet service included.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="Meet & greet" data-es="Recepcion personalizada">Meet & greet</span>
+                    <span class="card-feature" data-en="Flight tracking" data-es="Seguimiento vuelo">Flight tracking</span>
+                    <span class="card-feature" data-en="Free waiting" data-es="Espera gratis">Free waiting</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;80 <span>/ trip</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car Rental -->
+        <div class="activity-card" data-cat="adventure">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800" alt="Car Rental" loading="lazy">
+                <span class="card-badge">Adventure</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Premium Car Rental - Volkswagen Golf" data-es="Alquiler de Coche Premium - Volkswagen Golf">Premium Car Rental - Volkswagen Golf</h3>
+                <div class="card-meta">
+                    <span>📍 Hotel delivery</span>
+                    <span>⏱️ 1-7 days</span>
+                </div>
+                <p class="card-desc" data-en="Rent a comfortable Volkswagen Golf for your island exploration. Includes full insurance, GPS, and free delivery to your hotel." data-es="Alquila un comodo Volkswagen Golf para tu exploracion de la isla. Incluye seguro completo, GPS y entrega gratuita en tu hotel.">Rent a comfortable Volkswagen Golf for your island exploration. Includes full insurance, GPS, and free delivery to your hotel.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="Full insurance" data-es="Seguro completo">Full insurance</span>
+                    <span class="card-feature" data-en="Free GPS" data-es="GPS gratis">Free GPS</span>
+                    <span class="card-feature" data-en="Unlimited km" data-es="Km ilimitados">Unlimited km</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;150 <span>/ week</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- E-Bike -->
+        <div class="activity-card" data-cat="adventure">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1571333250630-f0230c320b6d?w=800" alt="E-Bike" loading="lazy">
+                <span class="card-badge">Adventure</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Electric Bike Rental with Route Map" data-es="Alquiler de Bicicleta Electrica con Mapa de Rutas">Electric Bike Rental with Route Map</h3>
+                <div class="card-meta">
+                    <span>📍 Multiple pickup points</span>
+                    <span>⏱️ Full day</span>
+                </div>
+                <p class="card-desc" data-en="Explore Lanzarote on an electric bike with curated route recommendations. Includes helmet, lock, and emergency support." data-es="Explora Lanzarote en bicicleta electrica con recomendaciones de rutas seleccionadas. Incluye casco, candado y soporte de emergencia.">Explore Lanzarote on an electric bike with curated route recommendations. Includes helmet, lock, and emergency support.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="Electric assist" data-es="Asistencia electrica">Electric assist</span>
+                    <span class="card-feature" data-en="Route maps" data-es="Mapas de rutas">Route maps</span>
+                    <span class="card-feature" data-en="Helmet incl." data-es="Casco incl.">Helmet incl.</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;45 <span>/ day</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Surfing -->
+        <div class="activity-card" data-cat="adventure">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=800" alt="Surfing" loading="lazy">
+                <span class="card-badge">Adventure</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Surfing Lessons - Beginner Package" data-es="Clases de Surf - Paquete Principiante">Surfing Lessons - Beginner Package</h3>
+                <div class="card-meta">
+                    <span>📍 Famara Beach</span>
+                    <span>⏱️ 2 hours</span>
+                </div>
+                <p class="card-desc" data-en="Learn to surf with certified instructors at Famara Beach. All equipment provided and small group sizes." data-es="Aprende a surfear con instructores certificados en Playa de Famara. Todo el equipo incluido y grupos pequenos.">Learn to surf with certified instructors at Famara Beach. All equipment provided and small group sizes.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="Certified instructor" data-es="Instructor certificado">Certified instructor</span>
+                    <span class="card-feature" data-en="All equipment" data-es="Todo el equipo">All equipment</span>
+                    <span class="card-feature" data-en="Photos incl." data-es="Fotos incl.">Photos incl.</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;60 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- VIP Sunbed -->
+        <div class="activity-card" data-cat="beach">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Beach" loading="lazy">
+                <span class="card-badge">Beach</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Playa Grande VIP Sunbed Package" data-es="Pack VIP Hamacas Playa Grande">Playa Grande VIP Sunbed Package</h3>
+                <div class="card-meta">
+                    <span>📍 Playa Grande</span>
+                    <span>⏱️ Full day</span>
+                </div>
+                <p class="card-desc" data-en="Premium front-row sunbeds at Playa Grande, just 300m from Gueldera Apartments. 2 sunbeds, parasol, and 2 welcome drinks." data-es="Hamacas premium en primera linea en Playa Grande, a solo 300m de Gueldera Apartments. 2 hamacas, sombrilla y 2 bebidas de bienvenida.">Premium front-row sunbeds at Playa Grande, just 300m from Gueldera Apartments. 2 sunbeds, parasol, and 2 welcome drinks.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="2 sunbeds" data-es="2 hamacas">2 sunbeds</span>
+                    <span class="card-feature" data-en="Welcome drinks" data-es="Bebidas bienvenida">Welcome drinks</span>
+                    <span class="card-feature" data-en="Front row" data-es="Primera linea">Front row</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;40 <span>/ day</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jeep Safari -->
+        <div class="activity-card" data-cat="beach">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1504681869696-d977211a5f4c?w=800" alt="Jeep Safari" loading="lazy">
+                <span class="card-badge">Beach</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Hidden Beaches Jeep Safari" data-es="Safari en Jeep por Playas Escondidas">Hidden Beaches Jeep Safari</h3>
+                <div class="card-meta">
+                    <span>📍 Pickup Puerto del Carmen</span>
+                    <span>⏱️ 5 hours</span>
+                </div>
+                <p class="card-desc" data-en="Discover Lanzarote's secret beaches by 4x4 jeep. Visit Papagayo, Playa Mujeres, and Playa del Pozo." data-es="Descubre las playas secretas de Lanzarote en jeep 4x4. Visita Papagayo, Playa Mujeres y Playa del Pozo.">Discover Lanzarote's secret beaches by 4x4 jeep. Visit Papagayo, Playa Mujeres, and Playa del Pozo.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="4x4 Jeep" data-es="Jeep 4x4">4x4 Jeep</span>
+                    <span class="card-feature" data-en="Picnic lunch" data-es="Picnic incluido">Picnic lunch</span>
+                    <span class="card-feature" data-en="Snorkeling" data-es="Snorkel">Snorkeling</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;85 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tapas Tour -->
+        <div class="activity-card" data-cat="dining">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1515443961218-a51367888e4b?w=800" alt="Tapas" loading="lazy">
+                <span class="card-badge">Dining</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Tapas & Wine Walking Tour" data-es="Tour de Tapas y Vino por Puerto del Carmen">Tapas & Wine Walking Tour</h3>
+                <div class="card-meta">
+                    <span>📍 Avenida de las Playas</span>
+                    <span>⏱️ 3 hours</span>
+                </div>
+                <p class="card-desc" data-en="Guided walking tour through the best local restaurants. 5 stops with tapas and wine pairings. Authentic Canarian cuisine." data-es="Tour guiado a pie por los mejores restaurantes locales. 5 paradas con tapas y maridaje de vinos. Cocina canaria autentica.">Guided walking tour through the best local restaurants. 5 stops with tapas and wine pairings. Authentic Canarian cuisine.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="5 stops" data-es="5 paradas">5 stops</span>
+                    <span class="card-feature" data-en="Wine pairings" data-es="Maridaje vinos">Wine pairings</span>
+                    <span class="card-feature" data-en="Local guide" data-es="Guia local">Local guide</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;55 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cooking Class -->
+        <div class="activity-card" data-cat="dining">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800" alt="Cooking" loading="lazy">
+                <span class="card-badge">Dining</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Canarian Cooking Class with Market Visit" data-es="Clase de Cocina Canaria con Visita al Mercado">Canarian Cooking Class with Market Visit</h3>
+                <div class="card-meta">
+                    <span>📍 Teguise</span>
+                    <span>⏱️ 4 hours</span>
+                </div>
+                <p class="card-desc" data-en="Learn to cook authentic Canarian dishes: papas arrugadas with mojo, gofio mousse, and fresh fish. Includes market visit." data-es="Aprende a cocinar platos canarios autenticos: papas arrugadas con mojo, mousse de gofio y pescado fresco. Incluye visita al mercado.">Learn to cook authentic Canarian dishes: papas arrugadas with mojo, gofio mousse, and fresh fish. Includes market visit.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="Hands-on" data-es="Practica">Hands-on</span>
+                    <span class="card-feature" data-en="Market visit" data-es="Visita mercado">Market visit</span>
+                    <span class="card-feature" data-en="Lunch incl." data-es="Almuerzo incl.">Lunch incl.</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;65 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aloe Spa -->
+        <div class="activity-card" data-cat="wellness">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800" alt="Spa" loading="lazy">
+                <span class="card-badge">Wellness</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Aloe Vera Spa Experience" data-es="Experiencia Spa Aloe Vera">Aloe Vera Spa Experience</h3>
+                <div class="card-meta">
+                    <span>📍 Puerto del Carmen</span>
+                    <span>⏱️ 90 minutes</span>
+                </div>
+                <p class="card-desc" data-en="Relaxing spa treatment using locally grown Lanzarote aloe vera. Full body massage plus aloe vera facial and body wrap." data-es="Tratamiento spa relajante con aloe vera cultivado localmente en Lanzarote. Masaje corporal completo mas facial y envoltura de aloe vera.">Relaxing spa treatment using locally grown Lanzarote aloe vera. Full body massage plus aloe vera facial and body wrap.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="90 min treatment" data-es="Tratamiento 90 min">90 min treatment</span>
+                    <span class="card-feature" data-en="Local aloe vera" data-es="Aloe vera local">Local aloe vera</span>
+                    <span class="card-feature" data-en="Hotel pickup" data-es="Recogida hotel">Hotel pickup</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;70 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Yoga -->
+        <div class="activity-card" data-cat="wellness">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800" alt="Yoga" loading="lazy">
+                <span class="card-badge">Wellness</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Sunrise Yoga at Playa Grande" data-es="Yoga al Amanecer en Playa Grande">Sunrise Yoga at Playa Grande</h3>
+                <div class="card-meta">
+                    <span>📍 Playa Grande</span>
+                    <span>⏱️ 1 hour</span>
+                </div>
+                <p class="card-desc" data-en="Start your day with a peaceful yoga session on Puerto del Carmen's main beach. All levels welcome. Mat and smoothie included." data-es="Comienza tu dia con una sesion de yoga en la playa principal de Puerto del Carmen. Todos los niveles. Esterilla y smoothie incluidos.">Start your day with a peaceful yoga session on Puerto del Carmen's main beach. All levels welcome. Mat and smoothie included.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="All levels" data-es="Todos los niveles">All levels</span>
+                    <span class="card-feature" data-en="Mat provided" data-es="Esterilla incl.">Mat provided</span>
+                    <span class="card-feature" data-en="Smoothie incl." data-es="Smoothie incl.">Smoothie incl.</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;25 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wine Tasting -->
+        <div class="activity-card" data-cat="culture">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800" alt="Wine" loading="lazy">
+                <span class="card-badge">Culture</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Wine Tasting Tour - La Geria Vineyards" data-es="Tour de Cata de Vinos - Vinedos de La Geria">Wine Tasting Tour - La Geria Vineyards</h3>
+                <div class="card-meta">
+                    <span>📍 La Geria wine region</span>
+                    <span>⏱️ 3 hours</span>
+                </div>
+                <p class="card-desc" data-en="Visit traditional volcanic vineyards and taste award-winning Malvasia wines. Includes tapas and vineyard tour." data-es="Visita vinedos volcanicos tradicionales y degusta vinos Malvasia premiados. Incluye tapas y tour del vinedo.">Visit traditional volcanic vineyards and taste award-winning Malvasia wines. Includes tapas and vineyard tour.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="4 wine tastings" data-es="4 catas de vino">4 wine tastings</span>
+                    <span class="card-feature" data-en="Tapas incl." data-es="Tapas incl.">Tapas incl.</span>
+                    <span class="card-feature" data-en="Expert sommelier" data-es="Sommelier experto">Expert sommelier</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;75 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pub Crawl -->
+        <div class="activity-card" data-cat="nightlife">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1566417713940-fe7c7c98e5d6?w=800" alt="Nightlife" loading="lazy">
+                <span class="card-badge">Nightlife</span>
+                <span class="card-featured">Featured</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Pub Crawl Puerto del Carmen" data-es="Ruta de Bares por Puerto del Carmen">Pub Crawl Puerto del Carmen</h3>
+                <div class="card-meta">
+                    <span>📍 Avenida de las Playas</span>
+                    <span>⏱️ 3 hours</span>
+                </div>
+                <p class="card-desc" data-en="The ultimate night out! Tour 4 of the best bars and pubs. Welcome shots, drink deals, games, and a local guide." data-es="La mejor noche! Recorre 4 de los mejores bares y pubs. Shots de bienvenida, ofertas en bebidas, juegos y un guia local.">The ultimate night out! Tour 4 of the best bars and pubs. Welcome shots, drink deals, games, and a local guide.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="4 bar stops" data-es="4 paradas">4 bar stops</span>
+                    <span class="card-feature" data-en="Welcome shots" data-es="Shots bienvenida">Welcome shots</span>
+                    <span class="card-feature" data-en="Party games" data-es="Juegos fiesta">Party games</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;30 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Music -->
+        <div class="activity-card" data-cat="nightlife">
+            <div class="card-img">
+                <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800" alt="Live Music" loading="lazy">
+                <span class="card-badge">Nightlife</span>
+            </div>
+            <div class="card-body">
+                <h3 data-en="Live Music & Cocktails Experience" data-es="Musica en Vivo y Cocteles">Live Music & Cocktails Experience</h3>
+                <div class="card-meta">
+                    <span>📍 CC Biosfera</span>
+                    <span>⏱️ 2-3 hours</span>
+                </div>
+                <p class="card-desc" data-en="VIP table at a premium terrace with ocean views, live music, and 2 signature cocktails per person." data-es="Mesa VIP en terraza premium con vistas al mar, musica en vivo y 2 cocteles de autor por persona.">VIP table at a premium terrace with ocean views, live music, and 2 signature cocktails per person.</p>
+                <div class="card-features">
+                    <span class="card-feature" data-en="VIP table" data-es="Mesa VIP">VIP table</span>
+                    <span class="card-feature" data-en="2 cocktails" data-es="2 cocteles">2 cocktails</span>
+                    <span class="card-feature" data-en="Ocean views" data-es="Vistas al mar">Ocean views</span>
+                </div>
+                <div class="card-footer">
+                    <div class="card-price">&euro;35 <span>/ person</span></div>
+                    <a href="https://hotel-conciergepro.com/login" class="btn-book" data-en="Book Now" data-es="Reservar">Book Now</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-logo">
+                <div class="footer-logo-icon">HC</div>
+                <div class="footer-logo-text">Hotel ConciergePro</div>
+            </div>
+            <p data-en="Your digital hotel marketplace. Discover, book, and enjoy the best experiences in Lanzarote directly from your hotel." data-es="Tu marketplace digital hotelero. Descubre, reserva y disfruta las mejores experiencias en Lanzarote directamente desde tu hotel.">Your digital hotel marketplace. Discover, book, and enjoy the best experiences in Lanzarote directly from your hotel.</p>
+        </div>
+        <div>
+            <h4 data-en="Categories" data-es="Categorias">Categories</h4>
+            <a href="#" onclick="filterCatByName('excursions')">Excursions</a>
+            <a href="#" onclick="filterCatByName('adventure')">Adventure</a>
+            <a href="#" onclick="filterCatByName('beach')">Beach</a>
+            <a href="#" onclick="filterCatByName('dining')">Dining</a>
+        </div>
+        <div>
+            <h4>&nbsp;</h4>
+            <a href="#" onclick="filterCatByName('wellness')">Wellness</a>
+            <a href="#" onclick="filterCatByName('culture')">Culture</a>
+            <a href="#" onclick="filterCatByName('nightlife')">Nightlife</a>
+        </div>
+        <div>
+            <h4 data-en="Contact" data-es="Contacto">Contact</h4>
+            <a href="mailto:info@gueldera-apartments.com">info@gueldera-apartments.com</a>
+            <a href="tel:+34828912856">+34 828 91 28 56</a>
+            <a>Puerto del Carmen, Lanzarote</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Hotel Concierge Pro by InnovaGestion Hotelera. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    let currentLang = 'en';
+
+    function toggleLang() {
+        currentLang = currentLang === 'en' ? 'es' : 'en';
+        document.querySelector('.lang-toggle').textContent = currentLang === 'en' ? 'ES' : 'EN';
+        document.querySelectorAll('[data-' + currentLang + ']').forEach(el => {
+            if (el.tagName === 'INPUT') {
+                el.placeholder = el.getAttribute('data-' + currentLang + '-placeholder');
+            } else {
+                el.innerHTML = el.getAttribute('data-' + currentLang);
+            }
+        });
+        // Update search placeholder
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput) {
+            searchInput.placeholder = searchInput.getAttribute('data-' + currentLang + '-placeholder');
+        }
+    }
+
+    // Auto-detect language
+    if (navigator.language && navigator.language.startsWith('es')) {
+        toggleLang();
+    }
+
+    let activeCat = 'all';
+
+    function filterCat(btn) {
+        activeCat = btn.dataset.cat;
+        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterActivities();
+    }
+
+    function filterCatByName(cat) {
+        activeCat = cat;
+        document.querySelectorAll('.cat-btn').forEach(b => {
+            b.classList.toggle('active', b.dataset.cat === cat);
+        });
+        filterActivities();
+        document.getElementById('experiences').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function filterActivities() {
+        const search = document.getElementById('searchInput').value.toLowerCase();
+        document.querySelectorAll('.activity-card').forEach(card => {
+            const matchesCat = activeCat === 'all' || card.dataset.cat === activeCat;
+            const text = card.textContent.toLowerCase();
+            const matchesSearch = !search || text.includes(search);
+            card.classList.toggle('hidden', !(matchesCat && matchesSearch));
+        });
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            const target = document.querySelector(a.getAttribute('href'));
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+        });
+    });
+</script>
+
+</body>
+</html>
