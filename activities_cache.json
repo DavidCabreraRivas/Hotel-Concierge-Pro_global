@@ -52,7 +52,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1544551763-77932a56cc07?w=800"
   },
   {
     "name": "Buggy Volcano Tour",
@@ -80,7 +81,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800"
   },
   {
     "name": "Hidden Beaches Jeep Safari",
@@ -162,7 +164,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1530053969600-caed2596d242?w=800"
   },
   {
     "name": "Convertible Rental (VW T-Roc Cabrio or similar)",
@@ -190,7 +193,8 @@
     ],
     "integration_type": "api",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800"
   },
   {
     "name": "Wine Tour La Geria (4 Wineries)",
@@ -218,7 +222,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800"
   },
   {
     "name": "Cesar Manrique Art & Architecture Tour",
@@ -246,7 +251,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800"
   },
   {
     "name": "Tapas & Wine Walking Tour Puerto del Carmen",
@@ -301,7 +307,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800"
   },
   {
     "name": "Lanzarote by Night Food Tour",
@@ -329,7 +336,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800"
   },
   {
     "name": "Timanfaya National Park Guided Tour",
@@ -465,7 +473,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1580137189272-c9379f8864fd?w=800"
   },
   {
     "name": "South Tour (Timanfaya + La Geria)",
@@ -493,7 +502,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=800"
   },
   {
     "name": "Whale & Dolphin Watching Eco Catamaran",
@@ -521,7 +531,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1568430462989-44163eb1752f?w=800"
   },
   {
     "name": "Full Day Fuerteventura Trip",
@@ -549,7 +560,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
   },
   {
     "name": "Pub Crawl Puerto del Carmen",
@@ -604,7 +616,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800"
   },
   {
     "name": "Airport Transfer Sedan (1-3 pax)",
@@ -632,7 +645,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800"
   },
   {
     "name": "Airport Transfer Minivan (4-7 pax)",
@@ -660,7 +674,8 @@
     ],
     "integration_type": "manual",
     "is_featured": true,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=800"
   },
   {
     "name": "Aloe Vera Spa Experience",
@@ -769,7 +784,8 @@
     ],
     "integration_type": "manual",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1626447857058-2ba6a8868cb5?w=800"
   },
   {
     "name": "Self-Drive Boat (No License)",
@@ -797,7 +813,8 @@
     ],
     "integration_type": "manual",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1544551763-92ab472cad1d?w=800"
   },
   {
     "name": "Senderismo Parque Natural Volcanes",
@@ -825,7 +842,8 @@
     ],
     "integration_type": "manual",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=800"
   },
   {
     "name": "Parasailing Playa Blanca",
@@ -853,7 +871,8 @@
     ],
     "integration_type": "manual",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1601024445121-e5b82f020549?w=800"
   },
   {
     "name": "Submarine Lanzarote",
@@ -881,7 +900,8 @@
     ],
     "integration_type": "manual",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
   },
   {
     "name": "Aqualava Waterpark",
@@ -909,7 +929,8 @@
     ],
     "integration_type": "manual",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1596463989966-9ae27ee7eb3e?w=800"
   },
   {
     "name": "Rancho Texas Animal Park",
@@ -937,7 +958,8 @@
     ],
     "integration_type": "manual",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1534567153574-2b12153a87f0?w=800"
   },
   {
     "name": "SUP Paddleboard Rental",
@@ -965,7 +987,8 @@
     ],
     "integration_type": "manual",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1526188717906-ab4a2f949f76?w=800"
   },
   {
     "name": "Economy Car Rental (Fiat 500 or similar)",
@@ -993,7 +1016,8 @@
     ],
     "integration_type": "api",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=800"
   },
   {
     "name": "SUV Rental (Nissan Qashqai or similar)",
@@ -1021,7 +1045,8 @@
     ],
     "integration_type": "api",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800"
   },
   {
     "name": "E-Scooter Rental",
@@ -1049,7 +1074,8 @@
     ],
     "integration_type": "manual",
     "is_featured": false,
-    "active": true
+    "active": true,
+    "image_url": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800"
   },
   {
     "name": "Wine Tasting Tour - La Geria Vineyards",
