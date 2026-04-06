@@ -35,7 +35,9 @@
     "updated_date": "2026-04-06T19:45:18.803000",
     "created_by_id": "anonymous",
     "created_by": "anonymous",
-    "is_sample": false
+    "is_sample": false,
+    "wheelchair_accessible": true,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Tour Arte y Arquitectura Cesar Manrique",
@@ -78,7 +80,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "own",
-    "priority_score": 80
+    "priority_score": 80,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Espectaculo Comedy Drag Night",
@@ -121,7 +125,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "own",
-    "priority_score": 80
+    "priority_score": 80,
+    "wheelchair_accessible": true,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Masaje en Alojamiento",
@@ -159,7 +165,9 @@
     "updated_date": "2026-04-06T19:45:18.803000",
     "created_by_id": "anonymous",
     "created_by": "anonymous",
-    "is_sample": false
+    "is_sample": false,
+    "wheelchair_accessible": true,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Pack Premium Masaje + Transporte",
@@ -197,7 +205,9 @@
     "updated_date": "2026-04-06T19:45:18.803000",
     "created_by_id": "anonymous",
     "created_by": "anonymous",
-    "is_sample": false
+    "is_sample": false,
+    "wheelchair_accessible": true,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Ruta Grupo Privado - Viñedo y Cata",
@@ -235,7 +245,9 @@
     "updated_date": "2026-04-06T19:45:18.803000",
     "created_by_id": "anonymous",
     "created_by": "anonymous",
-    "is_sample": false
+    "is_sample": false,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Tour del Sur (Timanfaya + La Geria)",
@@ -278,7 +290,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "own",
-    "priority_score": 80
+    "priority_score": 80,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Tour del Vino La Geria (4 Bodegas)",
@@ -321,7 +335,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "own",
-    "priority_score": 80
+    "priority_score": 80,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Alquiler Bicis Eléctricas",
@@ -359,7 +375,9 @@
     "updated_date": "2026-04-06T19:45:18.803000",
     "created_by_id": "anonymous",
     "created_by": "anonymous",
-    "is_sample": false
+    "is_sample": false,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Hiking Volcanic Natural Park",
@@ -402,7 +420,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "own",
-    "priority_score": 80
+    "priority_score": 80,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Manicura y Pedicura Tradicional",
@@ -440,7 +460,9 @@
     "updated_date": "2026-04-06T19:45:18.803000",
     "created_by_id": "anonymous",
     "created_by": "anonymous",
-    "is_sample": false
+    "is_sample": false,
+    "wheelchair_accessible": true,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Transfer Aeropuerto Minivan (4-7 pax)",
@@ -483,7 +505,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Transfer Aeropuerto Sedan (1-3 pax)",
@@ -526,7 +550,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Experiencia Spa Aloe Vera",
@@ -570,7 +596,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Buggy Tour Volcanico",
@@ -613,7 +641,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Alquiler Descapotable (VW T-Roc Cabrio o similar)",
@@ -656,7 +686,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "E-Paddleboard + Snorkel Papagayo",
@@ -699,7 +731,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Excursion Dia Completo a Fuerteventura",
@@ -742,7 +776,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Gran Tour Lanzarote (Timanfaya + Jameos + La Geria)",
@@ -785,7 +821,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Safari en Jeep por Playas Escondidas",
@@ -829,7 +867,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Kayak y Snorkel Papagayo",
@@ -872,7 +912,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Excursión de un Día a La Graciosa",
@@ -916,7 +958,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Lanzarote de Noche Tour Gastronomico",
@@ -959,7 +1003,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Pack VIP Hamacas Playa Grande",
@@ -1003,7 +1049,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Alquiler de Coche Premium - Volkswagen Golf",
@@ -1047,7 +1095,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Traslado Privado al Aeropuerto - Furgoneta de Lujo",
@@ -1091,7 +1141,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Ruta de Bares por Puerto del Carmen",
@@ -1135,7 +1187,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Crucero en Catamarán al Atardecer",
@@ -1179,7 +1233,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Tour de Tapas y Vino por Puerto del Carmen",
@@ -1223,7 +1279,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Tour Guiado del Parque Nacional de Timanfaya",
@@ -1267,7 +1325,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Cena Volcanica en Timanfaya",
@@ -1310,7 +1370,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Avistamiento de Ballenas y Delfines Eco Catamaran",
@@ -1353,7 +1415,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Aqualava Parque Acuatico",
@@ -1396,7 +1460,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Clase de Cocina Canaria con Visita al Mercado",
@@ -1440,7 +1506,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Alquiler Patinete Electrico",
@@ -1483,7 +1551,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Alquiler Coche Economico (Fiat 500 o similar)",
@@ -1526,7 +1596,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": true,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Experiencia en Moto de Agua",
@@ -1569,7 +1641,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Música en Vivo y Cócteles",
@@ -1613,7 +1687,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": true,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Parasailing Playa Blanca",
@@ -1656,7 +1732,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Rancho Texas Parque Animal",
@@ -1699,7 +1777,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Alquiler Stand Up Paddleboard",
@@ -1742,7 +1822,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Alquiler SUV (Nissan Qashqai o similar)",
@@ -1785,7 +1867,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": true,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Barco Sin Licencia",
@@ -1828,7 +1912,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Submarino Lanzarote",
@@ -1871,7 +1957,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": true,
+    "reduced_mobility_friendly": true
   },
   {
     "name_es": "Yoga al Amanecer en Playa Grande",
@@ -1915,7 +2003,9 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   },
   {
     "name_es": "Clases de Surf - Paquete Principiante",
@@ -1959,6 +2049,8 @@
     "created_by": "guelderaapartments@gmail.com",
     "is_sample": false,
     "source_type": "loyalty",
-    "priority_score": 50
+    "priority_score": 50,
+    "wheelchair_accessible": false,
+    "reduced_mobility_friendly": false
   }
 ]

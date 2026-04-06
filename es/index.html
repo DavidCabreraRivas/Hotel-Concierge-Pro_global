@@ -180,6 +180,22 @@
             letter-spacing: 0.5px;
         }
         .card-exclusive + .card-featured { top: 42px; }
+        .card-accessible {
+            position: absolute; bottom: 12px; left: 12px;
+            background: rgba(37,99,235,0.9); color: white; padding: 4px 10px;
+            border-radius: 15px; font-size: 0.7rem; font-weight: 600;
+            backdrop-filter: blur(4px);
+        }
+        .accessible-banner {
+            background: linear-gradient(135deg, #1e40af, #2563eb); color: white;
+            padding: 3rem 2rem; text-align: center; margin: 0;
+        }
+        .accessible-banner h2 { font-size: 2rem; font-weight: 800; margin-bottom: 0.5rem; }
+        .accessible-banner p { color: #bfdbfe; font-size: 1.1rem; max-width: 700px; margin: 0 auto 1.5rem; line-height: 1.6; }
+        .accessible-banner .stat-row { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+        .accessible-banner .stat-item { text-align: center; }
+        .accessible-banner .stat-num { font-size: 2rem; font-weight: 800; }
+        .accessible-banner .stat-label { font-size: 0.85rem; color: #93c5fd; }
         .type-filter { display: flex; gap: 8px; justify-content: center; margin-bottom: 1.5rem; }
         .type-btn {
             padding: 6px 16px; border-radius: 20px; border: 2px solid #e5e7eb;
@@ -267,6 +283,7 @@
         <a href="#how-it-works" data-en="How It Works" data-es="Como Funciona">How It Works</a>
         <a href="#experiences" data-en="Experiences" data-es="Experiencias">Experiences</a>
         <a href="#partners" data-en="For Hotels" data-es="Para Hoteles">For Hotels</a>
+        <a href="#accessible" data-en="♿ Accessible" data-es="♿ Accesible">♿ Accessible</a>
         <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
     </div>
     <div class="nav-right">
@@ -342,6 +359,20 @@
     </div>
 </section>
 
+<!-- Accessible Experiences Banner -->
+<section class="accessible-banner" id="accessible">
+    <h2 data-en="♿ Accessible Experiences" data-es="♿ Experiencias Accesibles">♿ Accessible Experiences</h2>
+    <p data-en="We believe everyone deserves unforgettable moments in Lanzarote. Discover our selection of experiences adapted for people with reduced mobility." data-es="Creemos que todos merecen momentos inolvidables en Lanzarote. Descubre nuestra selección de experiencias adaptadas para personas con movilidad reducida.">We believe everyone deserves unforgettable moments in Lanzarote. Discover our selection of experiences adapted for people with reduced mobility.</p>
+    <div class="stat-row">
+        <div class="stat-item"><div class="stat-num" id="accessibleCount">21</div><div class="stat-label" data-en="Accessible Activities" data-es="Actividades Accesibles">Accessible Activities</div></div>
+        <div class="stat-item"><div class="stat-num">9</div><div class="stat-label" data-en="Wheelchair Friendly" data-es="Aptas Silla de Ruedas">Wheelchair Friendly</div></div>
+        <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label" data-en="Commitment to Inclusion" data-es="Compromiso con la Inclusión">Commitment to Inclusion</div></div>
+    </div>
+    <div style="margin-top:1.5rem;">
+        <a href="#experiences" onclick="filterTypeByName('accessible')" style="display:inline-block;background:white;color:#1e40af;padding:12px 28px;border-radius:25px;text-decoration:none;font-weight:700;font-size:0.95rem;" data-en="View Accessible Experiences" data-es="Ver Experiencias Accesibles">View Accessible Experiences</a>
+    </div>
+</section>
+
 <!-- Experiences -->
 <section id="experiences">
     <div class="categories-section">
@@ -358,6 +389,7 @@
             <button class="type-btn active-all" data-type="all" onclick="filterType(this)" data-en="All Experiences" data-es="Todas">All Experiences</button>
             <button class="type-btn" data-type="own" onclick="filterType(this)" data-en="Exclusive" data-es="Exclusivas">Exclusive</button>
             <button class="type-btn" data-type="loyalty" onclick="filterType(this)" data-en="Partner Network" data-es="Red de Partners">Partner Network</button>
+            <button class="type-btn" data-type="accessible" onclick="filterType(this)" data-en="♿ Accessible" data-es="♿ Accesibles">♿ Accessible</button>
         </div>
 
         <div class="cat-filters">
@@ -425,15 +457,19 @@ function renderCard(a) {
         return `<span class="card-feature" data-en="${f}" data-es="${fEs}">${currentLang === 'es' ? fEs : f}</span>`;
     }).join("");
 
+    const isAccessible = a.reduced_mobility_friendly || a.wheelchair_accessible;
+    const isWheelchair = a.wheelchair_accessible;
     const exclusiveBadge = isOwn ? `<span class="card-exclusive" data-en="Exclusive" data-es="Exclusiva">${currentLang === 'es' ? 'Exclusiva' : 'Exclusive'}</span>` : "";
     const featuredBadge = isFeatured ? '<span class="card-featured">FEATURED</span>' : "";
+    const accessBadge = isAccessible ? `<span class="card-accessible">${isWheelchair ? '♿' : '🦽'} ${currentLang === 'es' ? 'Accesible' : 'Accessible'}</span>` : "";
     const priceDisplay = price ? `&euro;${price} <span>/ person</span>` : '<span data-en="Check price" data-es="Consultar precio">' + (currentLang === 'es' ? 'Consultar precio' : 'Check price') + '</span>';
 
-    return `<div class="activity-card" data-cat="${cat}" data-type="${a.source_type || 'loyalty'}">
+    return `<div class="activity-card" data-cat="${cat}" data-type="${a.source_type || 'loyalty'}" data-accessible="${isAccessible ? 'yes' : 'no'}">
         <div class="card-img">
             <img src="${img}" alt="${nameEn}" loading="lazy">
             <span class="card-badge">${catLabel}</span>
             ${exclusiveBadge}${featuredBadge}
+            ${accessBadge}
         </div>
         <div class="card-body">
             <h3 data-en="${nameEn}" data-es="${nameEs}">${currentLang === 'es' ? nameEs : nameEn}</h3>
@@ -587,11 +623,26 @@ document.addEventListener("DOMContentLoaded", loadActivities);
         const search = document.getElementById('searchInput').value.toLowerCase();
         document.querySelectorAll('.activity-card').forEach(card => {
             const matchesCat = activeCat === 'all' || card.dataset.cat === activeCat;
-            const matchesType = activeType === 'all' || card.dataset.type === activeType;
+            let matchesType = true;
+            if (activeType === 'accessible') {
+                matchesType = card.dataset.accessible === 'yes';
+            } else if (activeType !== 'all') {
+                matchesType = card.dataset.type === activeType;
+            }
             const text = card.textContent.toLowerCase();
             const matchesSearch = !search || text.includes(search);
             card.classList.toggle('hidden', !(matchesCat && matchesType && matchesSearch));
         });
+    }
+
+    function filterTypeByName(type) {
+        activeType = type;
+        document.querySelectorAll('.type-btn').forEach(b => {
+            b.classList.remove('active', 'active-all');
+            if (b.dataset.type === type) b.classList.add('active');
+        });
+        filterActivities();
+        document.getElementById('experiences').scrollIntoView({ behavior: 'smooth' });
     }
 
     // Smooth scroll for anchor links
