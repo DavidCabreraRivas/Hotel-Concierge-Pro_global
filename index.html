@@ -304,10 +304,22 @@
             <a href="#partners" class="btn-outline" data-en="Partner With Us" data-es="Colabora Con Nosotros">Partner With Us</a>
         </div>
         <div class="hero-stats">
-            <div class="hero-stat"><div class="num">42</div><div class="label" data-en="Experiences" data-es="Experiencias">Experiences</div></div>
-            <div class="hero-stat"><div class="num">7</div><div class="label" data-en="Categories" data-es="Categorias">Categories</div></div>
-            <div class="hero-stat"><div class="num">100%</div><div class="label" data-en="Digital & Commission-Free for Guests" data-es="Digital y Sin Comision para Huespedes">Digital & Commission-Free for Guests</div></div>
+            <div class="hero-stat"><div class="num" id="heroTotal">45</div><div class="label" data-en="Experiences" data-es="Experiencias">Experiences</div></div>
+            <div class="hero-stat"><div class="num">10</div><div class="label" data-en="Categories" data-es="Categorias">Categories</div></div>
+            <div class="hero-stat"><div class="num">♿ 29</div><div class="label" data-en="Accessible Activities" data-es="Actividades Accesibles">Accessible Activities</div></div>
         </div>
+    </div>
+</section>
+
+<!-- Featured Experiences (shown on entry) -->
+<section style="padding:3rem 2rem 2rem;background:white;" id="featured">
+    <div class="section-title">
+        <h2 data-en="Featured Experiences" data-es="Experiencias Destacadas">Featured Experiences</h2>
+        <p data-en="Our top picks for an unforgettable stay in Lanzarote" data-es="Nuestra seleccion para una estancia inolvidable en Lanzarote">Our top picks for an unforgettable stay in Lanzarote</p>
+    </div>
+    <div class="activities-grid" id="featuredGrid"></div>
+    <div style="text-align:center;margin-top:1.5rem;">
+        <a href="#experiences" class="btn-primary" data-en="View All Experiences" data-es="Ver Todas las Experiencias">View All Experiences</a>
     </div>
 </section>
 
@@ -489,6 +501,7 @@ function renderCard(a) {
 
 function renderAllCards() {
     const grid = document.getElementById("activitiesGrid");
+    const featuredGrid = document.getElementById("featuredGrid");
     // Sort: OWN first (priority_score DESC), then featured, then alphabetical
     const sorted = [...allActivities].sort((a, b) => {
         const pa = a.priority_score || 50;
@@ -498,9 +511,17 @@ function renderAllCards() {
         return (a.name || "").localeCompare(b.name || "");
     });
     grid.innerHTML = sorted.map(renderCard).join("");
+    // Featured grid: only is_featured activities (max 9)
+    if (featuredGrid) {
+        const featured = sorted.filter(a => a.is_featured).slice(0, 9);
+        featuredGrid.innerHTML = featured.map(renderCard).join("");
+    }
     // Update hero stats
-    const statEl = document.querySelector('.hero-stat .num');
-    if (statEl) statEl.textContent = allActivities.length;
+    const heroTotal = document.getElementById("heroTotal");
+    if (heroTotal) heroTotal.textContent = allActivities.length;
+    // Update accessible count
+    const accCount = document.getElementById("accessibleCount");
+    if (accCount) accCount.textContent = allActivities.filter(a => a.reduced_mobility_friendly || a.wheelchair_accessible).length;
     filterActivities();
 }
 

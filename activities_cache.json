@@ -71,7 +71,7 @@
     "description_es": "Descubre el legado artistico de Cesar Manrique. Visita Fundacion Cesar Manrique, Jardin de Cactus y Mirador del Rio.",
     "location": "Hotel pickup",
     "category": "culture",
-    "price_eur": null,
+    "price_eur": 48,
     "is_featured": true,
     "id": "69c9c649f2c36637c1d638a6",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -116,7 +116,7 @@
     "description_es": "El legendario espectaculo de comedia drag de Puerto del Carmen. Opcion cena disponible. Entretenimiento hilarante para adultos.",
     "location": "Avenida de las Playas",
     "category": "nightlife",
-    "price_eur": null,
+    "price_eur": 40,
     "is_featured": true,
     "id": "69c9c649f2c36637c1d638a9",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -281,7 +281,7 @@
     "description_es": "Tour de medio dia al sur volcanico. Visita las montanas de fuego de Timanfaya y degusta vinos en los vinedos volcanicos de La Geria.",
     "location": "Hotel pickup",
     "category": "excursions",
-    "price_eur": null,
+    "price_eur": 38,
     "is_featured": true,
     "id": "69c9c605ca39ee5c425dd2e4",
     "created_date": "2026-03-30T00:38:29.498000",
@@ -326,7 +326,7 @@
     "description_es": "Visita 4 bodegas volcanicas tradicionales en La Geria. Degusta vinos Malvasia y aprende sobre los metodos unicos de cultivo.",
     "location": "Hotel pickup",
     "category": "culture",
-    "price_eur": null,
+    "price_eur": 65,
     "is_featured": true,
     "id": "69c9c649f2c36637c1d638a5",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -411,7 +411,7 @@
     "description_es": "Senderismo guiado por el parque natural volcanico con guia local experto. Dificultad moderada, vistas impresionantes.",
     "location": "Hotel pickup",
     "category": "adventure",
-    "price_eur": null,
+    "price_eur": 35,
     "is_featured": false,
     "id": "69c9c605ca39ee5c425dd2eb",
     "created_date": "2026-03-30T00:38:29.499000",
@@ -496,7 +496,7 @@
     "description_es": "Transfer privado en minivan para grupos y familias.",
     "location": "Lanzarote Airport ACE",
     "category": "transfers",
-    "price_eur": null,
+    "price_eur": 55,
     "is_featured": true,
     "id": "69c9c649f2c36637c1d638b0",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -541,7 +541,7 @@
     "description_es": "Transfer privado en sedan desde aeropuerto de Lanzarote a cualquier hotel.",
     "location": "Lanzarote Airport ACE",
     "category": "transfers",
-    "price_eur": null,
+    "price_eur": 35,
     "is_featured": true,
     "id": "69c9c649f2c36637c1d638af",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -598,7 +598,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": true
+    "reduced_mobility_friendly": true,
+    "price_eur": 65
   },
   {
     "name_es": "Buggy Tour Volcanico",
@@ -632,7 +633,7 @@
     "description_es": "Conduce tu propio buggy por paisajes volcanicos y caminos off-road. Cascos y seguro incluidos.",
     "location": "Hotel pickup",
     "category": "adventure",
-    "price_eur": null,
+    "price_eur": 90,
     "is_featured": true,
     "id": "69c9c605ca39ee5c425dd2e8",
     "created_date": "2026-03-30T00:38:29.498000",
@@ -677,7 +678,7 @@
     "description_es": "Experimenta Lanzarote con el techo abierto. Seguro completo y kilometraje ilimitado incluidos.",
     "location": "Hotel delivery",
     "category": "car_rental",
-    "price_eur": null,
+    "price_eur": 65,
     "is_featured": true,
     "id": "69c9c649f2c36637c1d638b3",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -722,7 +723,7 @@
     "description_es": "Experiencia en paddleboard electrico hasta las calas de Papagayo con paradas de snorkel. Tendencia emergente — SUP con asistencia de motor.",
     "location": "Playa Blanca",
     "category": "beach",
-    "price_eur": null,
+    "price_eur": 65,
     "is_featured": true,
     "id": "69c9c649f2c36637c1d638ab",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -767,7 +768,7 @@
     "description_es": "Excursion de dia a Fuerteventura. Travesia en ferry, tour guiado de atracciones principales y tiempo libre en dunas de Corralejo.",
     "location": "Hotel pickup + Ferry",
     "category": "excursions",
-    "price_eur": null,
+    "price_eur": 75,
     "is_featured": true,
     "id": "69c9c605ca39ee5c425dd2e6",
     "created_date": "2026-03-30T00:38:29.498000",
@@ -812,7 +813,7 @@
     "description_es": "Tour completo de la isla incluyendo Parque Nacional de Timanfaya, Jameos del Agua y region vinicola de La Geria. Dia completo con guia y transporte.",
     "location": "Hotel pickup",
     "category": "excursions",
-    "price_eur": null,
+    "price_eur": 65,
     "is_featured": true,
     "id": "69c9c605ca39ee5c425dd2e3",
     "created_date": "2026-03-30T00:38:29.498000",
@@ -869,7 +870,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": false
+    "reduced_mobility_friendly": false,
+    "price_eur": 75
   },
   {
     "name_es": "Kayak y Snorkel Papagayo",
@@ -903,7 +905,7 @@
     "description_es": "Rema por aguas cristalinas hasta las famosas playas de Papagayo. Equipo de snorkel y guia incluidos.",
     "location": "Playa Blanca",
     "category": "adventure",
-    "price_eur": null,
+    "price_eur": 45,
     "is_featured": true,
     "id": "69c9c605ca39ee5c425dd2e7",
     "created_date": "2026-03-30T00:38:29.498000",
@@ -960,7 +962,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": true
+    "reduced_mobility_friendly": true,
+    "price_eur": 80
   },
   {
     "name_es": "Lanzarote de Noche Tour Gastronomico",
@@ -994,7 +997,7 @@
     "description_es": "Tour gastronomico nocturno a pie por restaurantes locales escondidos. 4 paradas con maridaje de vinos y sorpresa de musica en vivo.",
     "location": "Puerto del Carmen",
     "category": "dining",
-    "price_eur": null,
+    "price_eur": 60,
     "is_featured": true,
     "id": "69c9c649f2c36637c1d638a8",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -1051,7 +1054,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": false
+    "reduced_mobility_friendly": false,
+    "price_eur": 35
   },
   {
     "name_es": "Alquiler de Coche Premium - Volkswagen Golf",
@@ -1097,7 +1101,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": true
+    "reduced_mobility_friendly": true,
+    "price_eur": 55
   },
   {
     "name_es": "Traslado Privado al Aeropuerto - Furgoneta de Lujo",
@@ -1143,7 +1148,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": true
+    "reduced_mobility_friendly": true,
+    "price_eur": 75
   },
   {
     "name_es": "Ruta de Bares por Puerto del Carmen",
@@ -1189,7 +1195,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": false
+    "reduced_mobility_friendly": false,
+    "price_eur": 30
   },
   {
     "name_es": "Crucero en Catamarán al Atardecer",
@@ -1235,7 +1242,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": true
+    "reduced_mobility_friendly": true,
+    "price_eur": 55
   },
   {
     "name_es": "Tour de Tapas y Vino por Puerto del Carmen",
@@ -1281,7 +1289,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": true
+    "reduced_mobility_friendly": true,
+    "price_eur": 50
   },
   {
     "name_es": "Tour Guiado del Parque Nacional de Timanfaya",
@@ -1327,7 +1336,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": true
+    "reduced_mobility_friendly": true,
+    "price_eur": 45
   },
   {
     "name_es": "Cena Volcanica en Timanfaya",
@@ -1361,7 +1371,7 @@
     "description_es": "Tour exclusivo nocturno a Timanfaya con cena cocinada sobre calor volcanico. Vistas del atardecer sobre las montanas de fuego.",
     "location": "Hotel pickup",
     "category": "dining",
-    "price_eur": null,
+    "price_eur": 85,
     "is_featured": true,
     "id": "69c9c649f2c36637c1d638a7",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -1406,7 +1416,7 @@
     "description_es": "Crucero en catamaran ecologico para avistar ballenas y delfines en su habitat natural. Primer catamaran electrico de Canarias.",
     "location": "Puerto Calero",
     "category": "excursions",
-    "price_eur": null,
+    "price_eur": 55,
     "is_featured": true,
     "id": "69c9c605ca39ee5c425dd2e5",
     "created_date": "2026-03-30T00:38:29.498000",
@@ -1451,7 +1461,7 @@
     "description_es": "Principal parque acuatico de Lanzarote con toboganes, piscinas y zonas de relax.",
     "location": "Playa Blanca",
     "category": "attractions",
-    "price_eur": null,
+    "price_eur": 22,
     "is_featured": false,
     "id": "69c9c649f2c36637c1d638ad",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -1508,52 +1518,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": true
-  },
-  {
-    "name_es": "Alquiler Patinete Electrico",
-    "price_credits": 2,
-    "features_es": [
-      "Patinete electrico",
-      "Casco",
-      "Candado",
-      "Soporte movil"
-    ],
-    "image_url": "https://cdn.pixabay.com/photo/2019/10/16/17/15/e-scooter-4555419_1280.jpg",
-    "commission_percentage": 18,
-    "integration_url": null,
-    "hotel_id": null,
-    "available": true,
-    "description": "Eco-friendly way to explore Puerto del Carmen.",
-    "active": true,
-    "title": null,
-    "integration_type": "manual",
-    "duration": "Full day",
-    "features": [
-      "Electric scooter",
-      "Helmet",
-      "Lock",
-      "Phone holder"
-    ],
-    "highlights": [],
-    "provider": "Island Bikes",
-    "price": null,
-    "name": "E-Scooter Rental",
-    "description_es": "Forma ecologica de explorar Puerto del Carmen.",
-    "location": "Puerto del Carmen center",
-    "category": "car_rental",
-    "price_eur": null,
-    "is_featured": false,
-    "id": "69c9c649f2c36637c1d638b4",
-    "created_date": "2026-03-30T00:39:37.579000",
-    "updated_date": "2026-03-30T00:39:37.579000",
-    "created_by_id": "69177d69d023f43024a2f424",
-    "created_by": "guelderaapartments@gmail.com",
-    "is_sample": false,
-    "source_type": "loyalty",
-    "priority_score": 50,
-    "wheelchair_accessible": false,
-    "reduced_mobility_friendly": false
+    "reduced_mobility_friendly": true,
+    "price_eur": 55
   },
   {
     "name_es": "Alquiler Coche Economico (Fiat 500 o similar)",
@@ -1587,7 +1553,7 @@
     "description_es": "Coche economico con seguro completo. Entrega gratis en tu hotel.",
     "location": "Hotel delivery",
     "category": "car_rental",
-    "price_eur": null,
+    "price_eur": 25,
     "is_featured": false,
     "id": "69c9c649f2c36637c1d638b1",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -1632,7 +1598,7 @@
     "description_es": "Paseo en moto de agua a alta velocidad por la costa de Playa Blanca con vistas impresionantes de Fuerteventura.",
     "location": "Playa Blanca",
     "category": "adventure",
-    "price_eur": null,
+    "price_eur": 55,
     "is_featured": false,
     "id": "69c9c605ca39ee5c425dd2e9",
     "created_date": "2026-03-30T00:38:29.499000",
@@ -1689,7 +1655,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": true,
-    "reduced_mobility_friendly": true
+    "reduced_mobility_friendly": true,
+    "price_eur": 25
   },
   {
     "name_es": "Parasailing Playa Blanca",
@@ -1723,7 +1690,7 @@
     "description_es": "Vuela sobre las aguas turquesas de Playa Blanca. Vuelos individuales o tandem. Vistas de Fuerteventura incluidas.",
     "location": "Playa Blanca",
     "category": "adventure",
-    "price_eur": null,
+    "price_eur": 50,
     "is_featured": false,
     "id": "69c9c605ca39ee5c425dd2ec",
     "created_date": "2026-03-30T00:38:29.499000",
@@ -1768,7 +1735,7 @@
     "description_es": "Parque animal y natural con espectaculos, piscina y encuentros. Leones marinos, delfines, loros y mas.",
     "location": "Puerto del Carmen",
     "category": "attractions",
-    "price_eur": null,
+    "price_eur": 25,
     "is_featured": false,
     "id": "69c9c649f2c36637c1d638ae",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -1813,7 +1780,7 @@
     "description_es": "Alquiler de Stand Up Paddleboard con instruccion breve. Explora la costa de Puerto del Carmen desde el agua.",
     "location": "Playa Grande, Puerto del Carmen",
     "category": "beach",
-    "price_eur": null,
+    "price_eur": 20,
     "is_featured": false,
     "id": "69c9c649f2c36637c1d638aa",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -1858,7 +1825,7 @@
     "description_es": "SUV espacioso perfecto para explorar la isla.",
     "location": "Hotel delivery",
     "category": "car_rental",
-    "price_eur": null,
+    "price_eur": 45,
     "is_featured": false,
     "id": "69c9c649f2c36637c1d638b2",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -1903,7 +1870,7 @@
     "description_es": "Explora la costa a tu ritmo en un barco sin licencia. No se requiere titulacion. Hasta 6 personas.",
     "location": "Puerto del Carmen",
     "category": "adventure",
-    "price_eur": null,
+    "price_eur": 80,
     "is_featured": false,
     "id": "69c9c605ca39ee5c425dd2ea",
     "created_date": "2026-03-30T00:38:29.499000",
@@ -1948,7 +1915,7 @@
     "description_es": "Desciende a 30 metros en un submarino real y explora el mundo submarino de Lanzarote.",
     "location": "Puerto Calero",
     "category": "attractions",
-    "price_eur": null,
+    "price_eur": 30,
     "is_featured": false,
     "id": "69c9c649f2c36637c1d638ac",
     "created_date": "2026-03-30T00:39:37.579000",
@@ -2005,7 +1972,8 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": false
+    "reduced_mobility_friendly": false,
+    "price_eur": 25
   },
   {
     "name_es": "Clases de Surf - Paquete Principiante",
@@ -2051,6 +2019,7 @@
     "source_type": "loyalty",
     "priority_score": 50,
     "wheelchair_accessible": false,
-    "reduced_mobility_friendly": false
+    "reduced_mobility_friendly": false,
+    "price_eur": 45
   }
 ]
